@@ -214,9 +214,10 @@ ul { list-style: none; }
 
 .hero-drone {
   position: absolute;
-  right: 8%;
+  /* v2: pin to the container's right edge and cap width so the headline never runs under it */
+  right: max(4%, calc((100vw - var(--max)) / 2));
   top: 18%;
-  width: min(420px, 48vw);
+  width: min(420px, 34vw);
   opacity: 0.95;
   filter: drop-shadow(0 30px 60px rgba(0,0,0,0.45));
   animation: float 7s ease-in-out infinite;
@@ -231,6 +232,14 @@ ul { list-style: none; }
   position: relative;
   z-index: 2;
   padding: 5rem 0 4.5rem;
+}
+
+/* v2: left-align hero copy in the container (was a centred 720px box that ran into the drone art) */
+.hero-content > * {
+  max-width: 640px;
+}
+
+.hero-content > .hero-meta {
   max-width: 720px;
 }
 
