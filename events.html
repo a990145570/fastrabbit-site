@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>What’s on in Cobourg and Port Hope — FastRabbit</title>
+  <meta name="description" content="Markets, music, workshops and get-togethers coming up in Cobourg and Port Hope, gathered every day.">
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="assets/css/split.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container nav">
+      <a class="logo" href="index.html" aria-label="FastRabbit home">
+        <span class="logo-mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 14c4-2 6-8 8-8s4 6 8 8"/>
+            <path d="M12 6v12"/>
+            <path d="M8 18h8"/>
+          </svg>
+        </span>
+        FastRabbit
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Menu">Menu</button>
+      <nav id="primary-nav" class="nav-links" aria-label="Primary">
+        <a href="services.html">Services</a>
+        <a href="prices.html">Prices</a>
+        <a href="community.html">Community</a>
+        <a href="events.html" aria-current="page">Events</a>
+        <a href="about.html">About</a>
+        <a href="investors.html">Investors</a>
+        <a class="nav-cta" href="about.html#book">Book an enquiry</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="section section-dark community events-page" aria-labelledby="events-heading">
+      <div class="container">
+        <div class="events-block" id="local-events" aria-labelledby="events-heading">
+          <div class="events-head">
+            <h2 id="events-heading">What’s on in Cobourg and Port Hope</h2>
+            <div class="events-filter" role="group" aria-label="Filter by town">
+              <button type="button" class="chip is-on" data-town="">Both towns</button>
+              <button type="button" class="chip" data-town="Cobourg">Cobourg</button>
+              <button type="button" class="chip" data-town="Port Hope">Port Hope</button>
+            </div>
+          </div>
+          <p class="events-intro">Markets, music, workshops and get-togethers coming up close to home, gathered for you every day.</p>
+          <div id="events-list" class="events-list" aria-live="polite">
+            <p class="events-empty">Loading local events…</p>
+          </div>
+          <button type="button" class="btn btn-ghost events-more" id="events-more" hidden>Show more events</button>
+          <p class="events-note">Dates and details can change, so check with the organiser before you go.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="logo" href="index.html">
+            <span class="logo-mark" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round"><path d="M4 14c4-2 6-8 8-8s4 6 8 8"/><path d="M12 6v12"/><path d="M8 18h8"/></svg>
+            </span>
+            FastRabbit
+          </a>
+          <p>Aerial photography for Northumberland County, Ontario.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <a href="index.html">Home</a>
+          <a href="services.html">Services</a>
+          <a href="prices.html">Prices</a>
+          <a href="community.html">Community</a>
+          <a href="events.html">Events</a>
+          <a href="about.html">About</a>
+          <a href="investors.html">Investors</a>
+          <a href="about.html#book">Enquiry</a>
+        </div>
+        <div class="footer-col">
+          <h4>Notes</h4>
+          <a href="about.html#book">Booking from Jan 2027</a>
+          <a href="services.html">Builder visits from spring 2027</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span id="y">2026</span> FastRabbit Aeronautics · Cobourg, Ontario</span>
+        <span>Prices CAD before HST · <a href="CREDITS.md">Sample photos: see credits</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/community.js"></script>
+</body>
+</html>
