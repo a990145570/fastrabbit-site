@@ -17,7 +17,9 @@
   if (!list) return;
   var more = document.getElementById("events-more");
   var chips = document.querySelectorAll(".events-filter .chip");
-  var all = [], town = "", shown = 9, STEP = 9;
+  // data-limit="5" shows only the next few events (home and Community pages) with a "See all events" link instead of "Show more".
+  var LIMIT = +(list.getAttribute("data-limit") || 0);
+  var all = [], town = "", STEP = LIMIT || 9, shown = STEP;
   function esc(s) { return String(s).replace(/[&<>"']/g, function (c) { return {"&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;"}[c]; }); }
   function parse(d) { var p = d.split("-"); return new Date(+p[0], +p[1] - 1, +p[2]); }
   function niceTime(t) {
@@ -31,7 +33,7 @@
     var items = all.filter(function (e) { return parse(e.date) >= t0 && (!town || e.town === town); });
     if (!items.length) {
       list.innerHTML = '<p class="events-empty">No upcoming events to show just now. Check back soon, as the list refreshes every day.</p>';
-      more.hidden = true;
+      if (more) more.hidden = true;
       return;
     }
     list.innerHTML = items.slice(0, shown).map(function (e) {
@@ -50,7 +52,7 @@
         (also.length ? '<p class="event-also">Also on ' + esc(also.join(", ")) + '</p>' : "") +
         '</div></article>';
     }).join("");
-    more.hidden = items.length <= shown;
+    if (more) more.hidden = LIMIT ? true : items.length <= shown;
   }
   for (var i = 0; i < chips.length; i++) {
     chips[i].addEventListener("click", function () {
@@ -58,7 +60,7 @@
       town = this.getAttribute("data-town"); shown = STEP; render();
     });
   }
-  more.addEventListener("click", function () { shown += STEP; render(); });
+  if (more) more.addEventListener("click", function () { shown += STEP; render(); });
   fetch("assets/data/events.json", {cache: "no-cache"})
     .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
     .then(function (d) { all = d.events || []; render(); })
