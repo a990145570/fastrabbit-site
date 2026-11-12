@@ -28,6 +28,7 @@
       </a>
       <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Menu">Menu</button>
       <nav id="primary-nav" class="nav-links" aria-label="Primary">
+        <a href="#community">Community</a>
         <a href="#about">About</a>
         <a href="investors.html">Investors</a>
         <a href="services.html">Services &amp; pricing</a>
@@ -84,6 +85,64 @@
       </div>
     </section>
 
+    <!-- COMMUNITY -->
+    <section class="section section-dark community" id="community" aria-labelledby="community-heading">
+      <div class="container">
+        <div class="community-intro">
+          <p class="section-kicker">Community</p>
+          <h2 id="community-heading">Our neighbours come first.</h2>
+          <p class="community-lead">
+            FastRabbit calls Cobourg home, and our community and non-profit work sits right up front, next to everything else we do. We love the lakeshore towns, the halls and churches that host the bazaars, and the volunteers who keep the festivals going, and we want to give something back to the places that make this county feel like home.
+          </p>
+        </div>
+        <div class="community-grid">
+          <article class="community-card community-offer">
+            <h3>For non-profits and community groups</h3>
+            <!-- SALES-OFFER-SLOT -->
+            <!-- PROPOSAL: awaiting Adam's approval -->
+            <p>At FastRabbit, the places we live — Cobourg, Port Hope and the rest of Northumberland County — are not a side project. They are part of why the company exists. We offer complimentary talks and workshops for Cobourg schools and libraries on making great aerial photos and flying safely and considerately, and Pet Find stays at C$125 for a daytime search, as a kindness to families looking for a lost pet. Each year we donate four photo visits to local non-profits and community groups, with the recipients chosen by a small community focus group, not by a discount code. If you lead a group that serves this county and would like to take part, please write to <a href="mailto:sales@fastrabbit.org">sales@fastrabbit.org</a>.</p>
+            <!-- /SALES-OFFER-SLOT -->
+          </article>
+          <article class="community-card community-feedback">
+            <h3>Tell us what you’d like to see</h3>
+            <p>Have an idea, a kind word, a gentle grumble or a request for your street, club or cause? We read every note, and the best ideas shape what we do next.</p>
+            <form id="community-form" action="#" method="post">
+              <div class="form-field">
+                <label for="c-name">Name</label>
+                <input id="c-name" name="name" type="text" autocomplete="name" required>
+              </div>
+              <div class="form-field">
+                <label for="c-email">Email</label>
+                <input id="c-email" name="email" type="email" autocomplete="email" required>
+              </div>
+              <div class="form-field">
+                <label for="c-message">Your feedback or request</label>
+                <textarea id="c-message" name="message" rows="4" required></textarea>
+              </div>
+              <button class="btn btn-primary" type="submit">Send to FastRabbit</button>
+              <p class="form-small">This opens your own email app with your note ready to send to sales@fastrabbit.org. Nothing is stored on this site.</p>
+            </form>
+          </article>
+        </div>
+        <div class="events-block" id="local-events" aria-labelledby="events-heading">
+          <div class="events-head">
+            <h3 id="events-heading">What’s on in Cobourg and Port Hope</h3>
+            <div class="events-filter" role="group" aria-label="Filter by town">
+              <button type="button" class="chip is-on" data-town="">Both towns</button>
+              <button type="button" class="chip" data-town="Cobourg">Cobourg</button>
+              <button type="button" class="chip" data-town="Port Hope">Port Hope</button>
+            </div>
+          </div>
+          <p class="events-intro">A friendly round-up of markets, music, workshops and get-togethers coming up close to home, refreshed every day.</p>
+          <div id="events-list" class="events-list" aria-live="polite">
+            <p class="events-empty">Loading local events…</p>
+          </div>
+          <button type="button" class="btn btn-ghost events-more" id="events-more" hidden>Show more events</button>
+          <p class="events-note">Dates and details can change, so check with the organiser before you go.</p>
+        </div>
+      </div>
+    </section>
+
     <!-- ABOUT -->
     <section class="section section-alt" id="about" aria-labelledby="about-heading">
       <div class="container about-grid">
@@ -114,7 +173,17 @@
       </div>
     </section>
 
-
+    <!-- SERVICES BANNER -->
+    <section class="services-banner" aria-labelledby="services-banner-heading">
+      <div class="services-banner-bg" role="img" aria-label="A sunny autumn afternoon on the Cobourg waterfront, with the marina, golden trees and the waterfront path."></div>
+      <div class="container services-banner-txt">
+        <!-- BANNER-COPY-SLOT -->
+        <h2 id="services-banner-heading">One clear price, four ways in, and <em>a rabbit that glows in the dark.</em></h2>
+        <p>Aerial photos and video for homes and listings, property care, land, farms and building, and life’s moments across Cobourg, Port Hope and Northumberland County. Clear prices on the card, and our regulars are rewarded.</p>
+        <!-- /BANNER-COPY-SLOT -->
+      </div>
+    </section>
+    <p class="services-banner-credit">Photo: Cobourg waterfront, Municipal Affairs and Housing, <a href="https://creativecommons.org/licenses/by/2.0/" target="_blank" rel="noopener">CC BY 2.0</a>, via <a href="https://commons.wikimedia.org/wiki/File:Cobourg_Waterfront_Secteur_riverain_de_Cobourg_(26993798479).jpg" target="_blank" rel="noopener">Wikimedia Commons</a>. Licensed stock, not FastRabbit’s work. Cropped, with colour overlay and text added by FastRabbit. Copyright Queen’s Printer for Ontario, photo source: Ontario Growth Secretariat, Ministry of Municipal Affairs.</p>
     <!-- SERVICES PREVIEW -->
     <section class="section section-alt" id="services-preview" aria-labelledby="services-heading">
       <div class="container">
@@ -1019,7 +1088,6 @@
       </div>
     </section>
 
-
     <!-- BOOKING -->
     <section class="section section-dark" id="book" aria-labelledby="book-heading">
       <div class="container booking-wrap">
@@ -1152,6 +1220,7 @@
         </div>
         <div class="footer-col">
           <h4>Explore</h4>
+          <a href="#community">Community</a>
           <a href="#about">About</a>
           <a href="investors.html">Investors</a>
           <a href="services.html">Services &amp; pricing</a>
@@ -1173,5 +1242,6 @@
   </footer>
 
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/community.js"></script>
 </body>
 </html>

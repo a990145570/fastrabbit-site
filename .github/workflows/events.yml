@@ -1,0 +1,42 @@
+name: Refresh local events
+
+on:
+  schedule:
+    # 10:15 and 22:15 UTC (5:15 a.m. / 5:15 p.m. Toronto in winter). Scheduled runs only fire from the default branch.
+    - cron: "15 10,22 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: events-refresh
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Build events.json (polite, honest user agent, robots.txt respected)
+        run: python3 scripts/build-events.py
+
+      - name: Commit events.json only if it changed
+        run: |
+          if git diff --quiet -- assets/data/events.json; then
+            echo "No change to events.json"
+            exit 0
+          fi
+          git config user.name "FastRabbit Web"
+          git config user.email "a990145570@users.noreply.github.com"
+          git add assets/data/events.json
+          git commit -m "Refresh local events"
+          git push
