@@ -1,0 +1,680 @@
+{
+ "updated": "2026-11-12T17:49:58-05:00",
+ "events": [
+  {
+   "title": "Exhibition, ‘The World We Fear’",
+   "date": "2026-11-12",
+   "time": "10:00",
+   "place": "Art Gallery of Northumberland, Cobourg",
+   "town": "Cobourg",
+   "type": "art event",
+   "blurb": "A Thursday-morning art event at Art Gallery of Northumberland, Cobourg.",
+   "also": [
+    "2026-11-13",
+    "2026-11-14",
+    "2026-11-15"
+   ]
+  },
+  {
+   "title": "Exhibition, ‘At the Threshold: Selections from the Permanent Collection’",
+   "date": "2026-11-12",
+   "time": "10:00",
+   "place": "Art Gallery of Northumberland, Cobourg",
+   "town": "Cobourg",
+   "type": "art event",
+   "blurb": "Come along to a Thursday-morning art event at Art Gallery of Northumberland, Cobourg.",
+   "also": [
+    "2026-11-13",
+    "2026-11-14",
+    "2026-11-15"
+   ]
+  },
+  {
+   "title": "The Sky's The Limit by artist Helen Van Poorten",
+   "date": "2026-11-12",
+   "time": "11:00",
+   "place": "Port Hope",
+   "town": "Port Hope",
+   "type": "art event",
+   "blurb": "Pencil in a Thursday-morning art event in Port Hope.",
+   "also": [
+    "2026-11-13",
+    "2026-11-14",
+    "2026-11-15"
+   ]
+  },
+  {
+   "title": "Woodland Christmas Urn",
+   "date": "2026-11-12",
+   "time": "13:00",
+   "place": "Baltimore Valley Garden Centre, Cobourg",
+   "town": "Cobourg",
+   "type": "hands-on workshop",
+   "blurb": "A Thursday-afternoon hands-on workshop at Baltimore Valley Garden Centre, Cobourg."
+  },
+  {
+   "title": "Merry and Bright at Clark’s Christmas Market",
+   "date": "2026-11-12",
+   "time": "16:00",
+   "place": "Clark Blossoms, Port Hope",
+   "town": "Port Hope",
+   "type": "market",
+   "blurb": "Come along to a Thursday-afternoon market at Clark Blossoms, Port Hope."
+  },
+  {
+   "title": "Teen Trivia/Game Night",
+   "date": "2026-11-12",
+   "time": "18:30",
+   "place": "Port Hope",
+   "town": "Port Hope",
+   "type": "games session",
+   "blurb": "Come along to a Thursday-evening games session in Port Hope.",
+   "also": [
+    "2026-11-19",
+    "2026-11-26"
+   ]
+  },
+  {
+   "title": "NLC Fall Program – Arctic Rising",
+   "date": "2026-11-12",
+   "time": "19:30",
+   "place": "Cobourg",
+   "town": "Cobourg",
+   "type": "art event",
+   "blurb": "Pencil in a Thursday-evening art event in Cobourg."
+  },
+  {
+   "title": "Clark’s Christmas Market",
+   "date": "2026-11-13",
+   "time": "13:00",
+   "place": "Clark Blossoms, Port Hope",
+   "town": "Port Hope",
+   "type": "market",
+   "blurb": "Pencil in a Friday-afternoon market at Clark Blossoms, Port Hope.",
+   "also": [
+    "2026-11-14",
+    "2026-11-15"
+   ]
+  },
+  {
+   "title": "SONG’s Next Gen SoundStage",
+   "date": "2026-11-13",
+   "time": "19:00",
+   "place": "Cameco Capitol Arts Centre, Port Hope",
+   "town": "Port Hope",
+   "type": "live music event",
+   "blurb": "Pencil in a Friday-evening live music event at Cameco Capitol Arts Centre, Port Hope."
+  },
+  {
+   "title": "Christmas Bazaar",
+   "date": "2026-11-14",
+   "time": "09:30",
+   "place": "St. John’s Church, Port Hope",
+   "town": "Port Hope",
+   "type": "market",
+   "blurb": "Join neighbours for a Saturday-morning market at St. John’s Church, Port Hope."
+  },
+  {
+   "title": "Nestled in the Orchard Urn",
+   "date": "2026-11-14",
+   "time": "09:30",
+   "place": "Baltimore Valley Garden Centre, Cobourg",
+   "town": "Cobourg",
+   "type": "hands-on workshop",
+   "blurb": "Join neighbours for a Saturday-morning hands-on workshop at Baltimore Valley Garden Centre, Cobourg."
+  },
+  {
+   "title": "The Great Gingerbread Build-Off Workshop",
+   "date": "2026-11-14",
+   "time": "10:00",
+   "place": "The Mill Restaurant, Cobourg",
+   "town": "Cobourg",
+   "type": "hands-on workshop",
+   "blurb": "Come along to a Saturday-morning hands-on workshop at The Mill Restaurant, Cobourg."
+  },
+  {
+   "title": "St. Peter’s Christmas Bazaar",
+   "date": "2026-11-14",
+   "time": "10:00",
+   "place": "St. Peter’s Church, Cobourg",
+   "town": "Cobourg",
+   "type": "market",
+   "blurb": "Join neighbours for a Saturday-morning market at St. Peter’s Church, Cobourg."
+  },
+  {
+   "title": "Wrap it Naturally: Beeswax Food Wrap workshop",
+   "date": "2026-11-14",
+   "time": "10:00",
+   "place": "Dancing Bee Equipment, Port Hope",
+   "town": "Port Hope",
+   "type": "hands-on workshop",
+   "blurb": "Join neighbours for a Saturday-morning hands-on workshop at Dancing Bee Equipment, Port Hope."
+  },
+  {
+   "title": "Abstraction Techniques with Steve Rose",
+   "date": "2026-11-14",
+   "time": "10:00",
+   "place": "Loyalist College, Port Hope Campus, Port Hope",
+   "town": "Port Hope",
+   "type": "hands-on workshop",
+   "blurb": "Come along to a Saturday-morning hands-on workshop at Loyalist College, Port Hope Campus, Port Hope."
+  },
+  {
+   "title": "DIY Holiday Planter Make and Take Workshops",
+   "date": "2026-11-14",
+   "time": "10:00",
+   "place": "Old Camborne Schoolhouse, Cobourg",
+   "town": "Cobourg",
+   "type": "hands-on workshop",
+   "blurb": "A Saturday-morning hands-on workshop at Old Camborne Schoolhouse, Cobourg.",
+   "also": [
+    "2026-11-15"
+   ]
+  },
+  {
+   "title": "Linocut star folded paper ornament",
+   "date": "2026-11-14",
+   "time": "13:00",
+   "place": "Rosie Young Design Studio, Cobourg",
+   "town": "Cobourg",
+   "type": "hands-on workshop",
+   "blurb": "Pencil in a Saturday-afternoon hands-on workshop at Rosie Young Design Studio, Cobourg."
+  },
+  {
+   "title": "A Hootiful Wreath",
+   "date": "2026-11-14",
+   "time": "14:30",
+   "place": "Baltimore Valley Garden Centre, Cobourg",
+   "town": "Cobourg",
+   "type": "hands-on workshop",
+   "blurb": "Join neighbours for a Saturday-afternoon hands-on workshop at Baltimore Valley Garden Centre, Cobourg."
+  },
+  {
+   "title": "Bethlehem Walk",
+   "date": "2026-11-14",
+   "time": "17:00",
+   "place": "Cold Springs Memorial Hall, Cobourg",
+   "town": "Cobourg",
+   "type": "walk",
+   "blurb": "A Saturday-evening walk at Cold Springs Memorial Hall, Cobourg.",
+   "also": [
+    "2026-11-15"
+   ]
+  },
+  {
+   "title": "Mead Making Workshop Get Ready for Valentine’s Day",
+   "date": "2026-11-14",
+   "time": "19:00",
+   "place": "Dancing Bee Equipment, Port Hope",
+   "town": "Port Hope",
+   "type": "hands-on workshop",
+   "blurb": "A Saturday-evening hands-on workshop at Dancing Bee Equipment, Port Hope."
+  },
+  {
+   "title": "Mead Making Workshop",
+   "date": "2026-11-14",
+   "time": "19:00",
+   "place": "Port Hope",
+   "town": "Port Hope",
+   "type": "hands-on workshop",
+   "blurb": "A Saturday-evening hands-on workshop in Port Hope."
+  },
+  {
+   "title": "Christmas Tea and Bazaar",
+   "date": "2026-11-14",
+   "time": "",
+   "place": "Cobourg",
+   "town": "Cobourg",
+   "type": "market",
+   "blurb": "Come along to a Saturday market in Cobourg."
+  },
+  {
+   "title": "Winter Wreath Workshop",
+   "date": "2026-11-15",
+   "time": "09:30",
+   "place": "Baltimore Valley Garden Centre, Cobourg",
+   "town": "Cobourg",
+   "type": "hands-on workshop",
+   "blurb": "Join neighbours for a Sunday-morning hands-on workshop at Baltimore Valley Garden Centre, Cobourg.",
+   "also": [
+    "2026-11-19"
+   ]
+  },
+  {
+   "title": "Sunday Scrabble and Chess Drop-in",
+   "date": "2026-11-15",
+   "time": "11:30",
+   "place": "Port Hope",
+   "town": "Port Hope",
+   "type": "games session",
+   "blurb": "Join neighbours for a Sunday-morning games session in Port Hope.",
+   "also": [
+    "2026-11-22",
+    "2026-11-29"
+   ]
+  },
+  {
+   "title": "Winter Elegance Planter Workshop",
+   "date": "2026-11-15",
+   "time": "12:00",
+   "place": "Baltimore Valley Garden Centre, Cobourg",
+   "town": "Cobourg",
+   "type": "hands-on workshop",
+   "blurb": "Come along to a Sunday-afternoon hands-on workshop at Baltimore Valley Garden Centre, Cobourg."
+  },
+  {
+   "title": "Christmas Cookie Workshop",
+   "date": "2026-11-15",
+   "time": "13:00",
+   "place": "Port Hope Masonic Temple, Port Hope",
+   "town": "Port Hope",
+   "type": "hands-on workshop",
+   "blurb": "Come along to a Sunday-afternoon hands-on workshop at Port Hope Masonic Temple, Port Hope."
+  },
+  {
+   "title": "Alcohol Inks on tile",
+   "date": "2026-11-15",
+   "time": "13:00",
+   "place": "Rosie Young Design Studio, Cobourg",
+   "town": "Cobourg",
+   "type": "hands-on workshop",
+   "blurb": "Pencil in a Sunday-afternoon hands-on workshop at Rosie Young Design Studio, Cobourg."
+  },
+  {
+   "title": "Christmas Star",
+   "date": "2026-11-15",
+   "time": "14:30",
+   "place": "Baltimore Valley Garden Centre, Cobourg",
+   "town": "Cobourg",
+   "type": "hands-on workshop",
+   "blurb": "Come along to a Sunday-afternoon hands-on workshop at Baltimore Valley Garden Centre, Cobourg."
+  },
+  {
+   "title": "Double Brim Beanie",
+   "date": "2026-11-15",
+   "time": "15:00",
+   "place": "Yarn It, Cobourg",
+   "town": "Cobourg",
+   "type": "hands-on workshop",
+   "blurb": "Pencil in a Sunday-afternoon hands-on workshop at Yarn It, Cobourg.",
+   "also": [
+    "2026-11-17"
+   ]
+  },
+  {
+   "title": "Northumberland Film Sundays – Dancing On The Elephant",
+   "date": "2026-11-15",
+   "time": "15:30",
+   "place": "Rainbow Cinemas, Cobourg",
+   "town": "Cobourg",
+   "type": "film screening",
+   "blurb": "Join neighbours for a Sunday-afternoon film screening at Rainbow Cinemas, Cobourg."
+  },
+  {
+   "title": "Baby Time at PHPL",
+   "date": "2026-11-16",
+   "time": "11:00",
+   "place": "Port Hope",
+   "town": "Port Hope",
+   "type": "family-friendly get-together",
+   "blurb": "Come along to a Monday-morning family-friendly get-together in Port Hope.",
+   "also": [
+    "2026-11-23",
+    "2026-11-30"
+   ]
+  },
+  {
+   "title": "Unfinished Stitchery",
+   "date": "2026-11-16",
+   "time": "14:00",
+   "place": "Port Hope",
+   "town": "Port Hope",
+   "type": "hands-on workshop",
+   "blurb": "Pencil in a Monday-afternoon hands-on workshop in Port Hope.",
+   "also": [
+    "2026-11-23",
+    "2026-11-30"
+   ]
+  },
+  {
+   "title": "Lunch and Learn",
+   "date": "2026-11-17",
+   "time": "11:30",
+   "place": "Port Hope",
+   "town": "Port Hope",
+   "type": "talk",
+   "blurb": "Pencil in a Tuesday-morning talk in Port Hope."
+  },
+  {
+   "title": "Community 101: Changing the Story Around Homelessness Part 1",
+   "date": "2026-11-17",
+   "time": "17:30",
+   "place": "Port Hope",
+   "town": "Port Hope",
+   "type": "talk",
+   "blurb": "Come along to a Tuesday-evening talk in Port Hope."
+  },
+  {
+   "title": "A Winter Welcome",
+   "date": "2026-11-18",
+   "time": "10:00",
+   "place": "Baltimore Valley Garden Centre, Cobourg",
+   "town": "Cobourg",
+   "type": "hands-on workshop",
+   "blurb": "A Wednesday-morning hands-on workshop at Baltimore Valley Garden Centre, Cobourg."
+  },
+  {
+   "title": "Toddlers and Waddlers with EarlyON",
+   "date": "2026-11-18",
+   "time": "10:30",
+   "place": "Port Hope",
+   "town": "Port Hope",
+   "type": "family-friendly get-together",
+   "blurb": "Join neighbours for a Wednesday-morning family-friendly get-together in Port Hope.",
+   "also": [
+    "2026-11-25"
+   ]
+  },
+  {
+   "title": "Christmas wreath",
+   "date": "2026-11-18",
+   "time": "18:00",
+   "place": "Rosie Young Design Studio, Cobourg",
+   "town": "Cobourg",
+   "type": "hands-on workshop",
+   "blurb": "Join neighbours for a Wednesday-evening hands-on workshop at Rosie Young Design Studio, Cobourg."
+  },
+  {
+   "title": "Women Abuse Prevention Month - Wrapped in Courage Flag Raising",
+   "date": "2026-11-19",
+   "time": "07:00",
+   "place": "Port Hope",
+   "town": "Port Hope",
+   "type": "community gathering",
+   "blurb": "A Thursday-morning community gathering in Port Hope."
+  },
+  {
+   "title": "Parks and Trails Plan Open House: Draft Plan",
+   "date": "2026-11-19",
+   "time": "17:00",
+   "place": "Port Hope",
+   "town": "Port Hope",
+   "type": "community gathering",
+   "blurb": "Join neighbours for a Thursday-evening community gathering in Port Hope."
+  },
+  {
+   "title": "Drop-in Family Craft Night",
+   "date": "2026-11-19",
+   "time": "17:30",
+   "place": "Port Hope",
+   "town": "Port Hope",
+   "type": "hands-on workshop",
+   "blurb": "Come along to a Thursday-evening hands-on workshop in Port Hope."
+  },
+  {
+   "title": "NCAM Speaker Series – Melody Crowe – Resilience and Mino-Bimaadziwin Good Life Teachings",
+   "date": "2026-11-19",
+   "time": "18:00",
+   "place": "Northumberland County Archives and Museum (NCAM), Cobourg",
+   "town": "Cobourg",
+   "type": "talk",
+   "blurb": "Pencil in a Thursday-evening talk at Northumberland County Archives and Museum (NCAM), Cobourg."
+  },
+  {
+   "title": "Winter Warm-Up Gala",
+   "date": "2026-11-19",
+   "time": "18:00",
+   "place": "Best Western Plus Cobourg, Cobourg",
+   "town": "Cobourg",
+   "type": "fundraising evening",
+   "blurb": "Pencil in a Thursday-evening fundraising evening at Best Western Plus Cobourg, Cobourg."
+  },
+  {
+   "title": "The Festival of Lights and Trees",
+   "date": "2026-11-20",
+   "time": "17:00",
+   "place": "Port Hope",
+   "town": "Port Hope",
+   "type": "festival",
+   "blurb": "Pencil in a Friday-evening festival in Port Hope.",
+   "also": [
+    "2026-11-21",
+    "2026-11-22",
+    "2026-11-24"
+   ]
+  },
+  {
+   "title": "RED A Big Bad Wolf Panto NAUGHTY",
+   "date": "2026-11-20",
+   "time": "19:30",
+   "place": "Port Hope",
+   "town": "Port Hope",
+   "type": "stage show",
+   "blurb": "A Friday-evening stage show in Port Hope.",
+   "also": [
+    "2026-11-21",
+    "2026-11-22",
+    "2026-11-24"
+   ]
+  },
+  {
+   "title": "88th Christmas Fayre hosted by Port Hope United Church",
+   "date": "2026-11-21",
+   "time": "09:00",
+   "place": "Port Hope",
+   "town": "Port Hope",
+   "type": "market",
+   "blurb": "A Saturday-morning market in Port Hope."
+  },
+  {
+   "title": "Beauty Secrets of the Bees: Honey Based Wellness Workshop",
+   "date": "2026-11-21",
+   "time": "10:00",
+   "place": "Port Hope",
+   "town": "Port Hope",
+   "type": "hands-on workshop",
+   "blurb": "Pencil in a Saturday-morning hands-on workshop in Port Hope."
+  },
+  {
+   "title": "New Hope United Church Christmas Luncheon and Craft Sale",
+   "date": "2026-11-21",
+   "time": "10:00",
+   "place": "Port Hope",
+   "town": "Port Hope",
+   "type": "market",
+   "blurb": "Come along to a Saturday-morning market in Port Hope."
+  },
+  {
+   "title": "Harvest of Christmas Delights",
+   "date": "2026-11-21",
+   "time": "10:00",
+   "place": "Port Hope",
+   "town": "Port Hope",
+   "type": "holiday celebration",
+   "blurb": "Pencil in a Saturday-morning holiday celebration in Port Hope.",
+   "also": [
+    "2026-11-22"
+   ]
+  },
+  {
+   "title": "Honey Fermentation: Fermentation for Gut Health Workshop",
+   "date": "2026-11-21",
+   "time": "13:30",
+   "place": "Port Hope",
+   "town": "Port Hope",
+   "type": "hands-on workshop",
+   "blurb": "Pencil in a Saturday-afternoon hands-on workshop in Port Hope."
+  },
+  {
+   "title": "Honey, Cheese and Charcuterie: Charcuterie Pairing Experience",
+   "date": "2026-11-21",
+   "time": "16:00",
+   "place": "Port Hope",
+   "town": "Port Hope",
+   "type": "food and drink gathering",
+   "blurb": "Come along to a Saturday-afternoon food and drink gathering in Port Hope."
+  },
+  {
+   "title": "Celebrate the Season - New Ventures Band",
+   "date": "2026-11-21",
+   "time": "",
+   "place": "Cobourg",
+   "town": "Cobourg",
+   "type": "live music event",
+   "blurb": "A Saturday live music event in Cobourg."
+  },
+  {
+   "title": "Let's Colour - All Ages",
+   "date": "2026-11-24",
+   "time": "15:00",
+   "place": "Port Hope",
+   "town": "Port Hope",
+   "type": "family-friendly get-together",
+   "blurb": "Come along to a Tuesday-afternoon family-friendly get-together in Port Hope."
+  },
+  {
+   "title": "Community 101: Changing the Story Around Homelessness Part 2",
+   "date": "2026-11-24",
+   "time": "17:30",
+   "place": "Port Hope",
+   "town": "Port Hope",
+   "type": "talk",
+   "blurb": "A Tuesday-evening talk in Port Hope."
+  },
+  {
+   "title": "International Day for the Elimination of Violence Against Women",
+   "date": "2026-11-25",
+   "time": "",
+   "place": "Port Hope",
+   "town": "Port Hope",
+   "type": "community event",
+   "blurb": "A Wednesday community event in Port Hope."
+  },
+  {
+   "title": "Deck the Walls Opening Reception",
+   "date": "2026-11-26",
+   "time": "18:00",
+   "place": "Port Hope",
+   "town": "Port Hope",
+   "type": "opening reception",
+   "blurb": "Come along to a Thursday-evening opening reception in Port Hope."
+  },
+  {
+   "title": "Adult Craft Night",
+   "date": "2026-11-26",
+   "time": "18:30",
+   "place": "Port Hope",
+   "town": "Port Hope",
+   "type": "hands-on workshop",
+   "blurb": "Come along to a Thursday-evening hands-on workshop in Port Hope."
+  },
+  {
+   "title": "Port Hope Candlelight Festival",
+   "date": "2026-11-27",
+   "time": "16:00",
+   "place": "Port Hope",
+   "town": "Port Hope",
+   "type": "festival",
+   "blurb": "A Friday-afternoon festival in Port Hope."
+  },
+  {
+   "title": "Candlelight Festival: Wagon Rides",
+   "date": "2026-11-27",
+   "time": "17:00",
+   "place": "Port Hope",
+   "town": "Port Hope",
+   "type": "festival",
+   "blurb": "Come along to a Friday-evening festival in Port Hope."
+  },
+  {
+   "title": "Port Hope Santa Claus Parade",
+   "date": "2026-11-28",
+   "time": "13:00",
+   "place": "Port Hope",
+   "town": "Port Hope",
+   "type": "holiday celebration",
+   "blurb": "Pencil in a Saturday-afternoon holiday celebration in Port Hope."
+  },
+  {
+   "title": "Les AMIS Concert",
+   "date": "2026-11-29",
+   "time": "",
+   "place": "Cobourg",
+   "town": "Cobourg",
+   "type": "live music event",
+   "blurb": "Come along to a Sunday live music event in Cobourg."
+  },
+  {
+   "title": "Christmas Magic",
+   "date": "2026-11-30",
+   "time": "",
+   "place": "Cobourg",
+   "town": "Cobourg",
+   "type": "holiday celebration",
+   "blurb": "A Monday holiday celebration in Cobourg."
+  },
+  {
+   "title": "A Very Merry Motown Christmas",
+   "date": "2026-12-05",
+   "time": "",
+   "place": "Cobourg",
+   "town": "Cobourg",
+   "type": "live music event",
+   "blurb": "Come along to a Saturday live music event in Cobourg."
+  },
+  {
+   "title": "Northumberland Orchestra Society- Swing Into The Season",
+   "date": "2026-12-12",
+   "time": "",
+   "place": "Cobourg",
+   "town": "Cobourg",
+   "type": "live music event",
+   "blurb": "Pencil in a Saturday live music event in Cobourg."
+  },
+  {
+   "title": "John McDermott - Family Christmas",
+   "date": "2026-12-16",
+   "time": "",
+   "place": "Cobourg",
+   "town": "Cobourg",
+   "type": "holiday celebration",
+   "blurb": "Pencil in a Wednesday holiday celebration in Cobourg."
+  },
+  {
+   "title": "ABBA Revisited- Christmas Spectacular",
+   "date": "2026-12-18",
+   "time": "",
+   "place": "Cobourg",
+   "town": "Cobourg",
+   "type": "live music event",
+   "blurb": "Come along to a Friday live music event in Cobourg."
+  },
+  {
+   "title": "Songs of Love and Light - La Jeunesse",
+   "date": "2026-12-19",
+   "time": "",
+   "place": "Cobourg",
+   "town": "Cobourg",
+   "type": "live music event",
+   "blurb": "A Saturday live music event in Cobourg."
+  },
+  {
+   "title": "Concert Band - Christmas Concert",
+   "date": "2026-12-20",
+   "time": "",
+   "place": "Cobourg",
+   "town": "Cobourg",
+   "type": "live music event",
+   "blurb": "Come along to a Sunday live music event in Cobourg."
+  },
+  {
+   "title": "Sultans of String - Christmas Caravan",
+   "date": "2026-12-20",
+   "time": "",
+   "place": "Cobourg",
+   "town": "Cobourg",
+   "type": "live music event",
+   "blurb": "Come along to a Sunday live music event in Cobourg."
+  }
+ ]
+}

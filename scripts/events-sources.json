@@ -1,0 +1,52 @@
+{
+  "_note": "Source list for scripts/build-events.py. Names and URLs stay in this file only; they are never written to events.json or shown on the site.",
+  "user_agent": "FastRabbitEventsBot/1.0 (+https://fastrabbit.org; sales@fastrabbit.org)",
+  "min_delay_seconds": 10,
+  "window_days": 45,
+  "max_events": 80,
+  "sources": [
+    {
+      "id": "tourism-calendar",
+      "kind": "tribe_events_api",
+      "url": "https://northumberlanding.ca/wp-json/tribe/events/v1/events?per_page=50&categories=cobourg,port-hope&start_date={today}&end_date={end}",
+      "towns": ["Cobourg", "Port Hope"],
+      "enabled": true
+    },
+    {
+      "id": "port-hope-municipal-calendar",
+      "kind": "esolutions_month",
+      "url": "https://calendar.porthope.ca/default/Month",
+      "default_town": "Port Hope",
+      "enabled": true
+    },
+    {
+      "id": "cobourg-internet-featured",
+      "kind": "joomla_title_list",
+      "url": "https://cobourginternet.com/about-cobourg/featured-events",
+      "default_town": "Cobourg",
+      "enabled": true
+    },
+    {
+      "id": "cobourg-municipal-calendar",
+      "kind": "esolutions_month",
+      "url": "https://calendar.cobourg.ca/tourism/Month",
+      "default_town": "Cobourg",
+      "enabled": true,
+      "_note": "Returned HTTP 403 to robots.txt and the home page on 2026-11-12; the script skips it automatically while that lasts."
+    },
+    {
+      "id": "northumberland-news-events",
+      "kind": "none",
+      "url": "https://www.northumberlandnews.com/events/",
+      "enabled": false,
+      "_note": "Listings load from a third-party widget by JavaScript; no events in the page HTML. Not used."
+    },
+    {
+      "id": "todays-northumberland",
+      "kind": "none",
+      "url": "https://todaysnorthumberland.ca/",
+      "enabled": false,
+      "_note": "No event listing or calendar found (/events/ redirects to a 2019 article). Not used."
+    }
+  ]
+}
