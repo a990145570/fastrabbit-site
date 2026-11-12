@@ -16,6 +16,7 @@
       "id": "port-hope-municipal-calendar",
       "kind": "esolutions_month",
       "url": "https://calendar.porthope.ca/default/Month",
+      "delay_seconds": 15,
       "default_town": "Port Hope",
       "enabled": true
     },
@@ -32,7 +33,7 @@
       "url": "https://calendar.cobourg.ca/tourism/Month",
       "default_town": "Cobourg",
       "enabled": true,
-      "_note": "Returned HTTP 403 to robots.txt and the home page on 2026-11-12; the script skips it automatically while that lasts."
+      "_note": "Returned HTTP 403 (server block) on 2026-11-12; the script skips it automatically while that lasts and never works around it."
     },
     {
       "id": "northumberland-news-events",
