@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
 """Build assets/data/events.json: upcoming Cobourg and Port Hope events, rewritten in FastRabbit's voice.
 
-Standard library only. One request per source (plus its robots.txt), with polite delays and an
-honest user agent. Sources whose robots.txt disallows the path, or that block us, are skipped.
+Standard library only. One request per source, with polite delays (per-source delay_seconds honoured) and an
+honest user agent. Sources that block us (HTTP 403 or any other error) are skipped, never worked around.
+robots.txt is not checked, at the owner's instruction (2026-11-12).
 Only facts are kept (title, date, time, place); every blurb is written fresh from templates.
 Source names and URLs are never written to the output.
 """
@@ -42,7 +43,7 @@ def note(msg):
 # ---------------- polite fetching ----------------
 class Fetcher:
     def __init__(self, ua, delay):
-        self.ua, self.delay, self.last, self.robots = ua, delay, 0.0, {}
+        self.ua, self.delay, self.last = ua, delay, 0.0
 
     def _get(self, url, extra_delay=0):
         wait = self.last + max(self.delay, extra_delay) - time.time()
@@ -60,81 +61,11 @@ class Fetcher:
         finally:
             self.last = time.time()
 
-    def robots_for(self, url):
-        p = urllib.parse.urlsplit(url)
-        host = f"{p.scheme}://{p.netloc}"
-        if host not in self.robots:
-            status, body = self._get(host + "/robots.txt")
-            if status in (401, 403):
-                self.robots[host] = ("blocked", f"robots.txt returned HTTP {status}")
-            elif status == 200:
-                self.robots[host] = ("rules", parse_robots(body, self.ua))
-            else:
-                self.robots[host] = ("rules", ([], 0))  # no robots file: allowed
-        return self.robots[host]
-
-    def fetch(self, url):
-        kind, data = self.robots_for(url)
-        if kind == "blocked":
-            return None, data
-        rules, crawl_delay = data
-        p = urllib.parse.urlsplit(url)
-        path = p.path + ("?" + p.query if p.query else "")
-        if not robots_allowed(rules, path):
-            return None, f"robots.txt disallows {p.path}"
-        status, body = self._get(url, crawl_delay)
+    def fetch(self, url, delay=0):
+        status, body = self._get(url, delay)
         if status != 200:
             return None, f"HTTP {status}" + (f" ({body[:120]})" if status == 0 else "")
         return body, "ok"
-
-
-def parse_robots(text, ua):
-    """Return (rules, crawl_delay) for our user agent, falling back to '*'. rules: [(allow, pattern)]."""
-    token = ua.split("/")[0].lower()
-    groups, cur_agents, cur_rules, in_rules = [], [], [], False
-    for raw in text.splitlines():
-        line = raw.split("#", 1)[0].strip()
-        if ":" not in line:
-            continue
-        k, v = [x.strip() for x in line.split(":", 1)]
-        k = k.lower()
-        if k == "user-agent":
-            if in_rules:
-                groups.append((cur_agents, cur_rules))
-                cur_agents, cur_rules, in_rules = [], [], False
-            cur_agents.append(v.lower())
-        elif k in ("allow", "disallow", "crawl-delay"):
-            in_rules = True
-            cur_rules.append((k, v))
-    if cur_agents:
-        groups.append((cur_agents, cur_rules))
-    mine = [r for a, r in groups if any(x != "*" and x in token for x in a)]
-    chosen = mine or [r for a, r in groups if "*" in a]
-    rules, delay = [], 0
-    for rs in chosen:
-        for k, v in rs:
-            if k == "crawl-delay":
-                try:
-                    delay = max(delay, float(v))
-                except ValueError:
-                    pass
-            elif v or k == "allow":
-                rules.append((k == "allow", v))
-    return rules, delay
-
-
-def robots_allowed(rules, path):
-    best_len, allowed = -1, True
-    for allow, pat in rules:
-        if not pat:
-            continue
-        rx = "^" + re.escape(pat).replace(r"\*", ".*")
-        if rx.endswith(r"\$"):
-            rx = rx[:-2] + "$"
-        if re.match(rx, path):
-            if len(pat) > best_len or (len(pat) == best_len and allow):
-                best_len, allowed = len(pat), allow
-    return allowed
 
 
 # ---------------- parsers (facts only) ----------------
@@ -278,7 +209,7 @@ def main():
         if cpath and os.path.exists(cpath):
             body, why = open(cpath, encoding="utf-8").read(), "cache"
         else:
-            body, why = f.fetch(url)
+            body, why = f.fetch(url, src.get("delay_seconds", 0))
             if cpath and body is not None:
                 os.makedirs(CACHE, exist_ok=True)
                 open(cpath, "w", encoding="utf-8").write(body)
