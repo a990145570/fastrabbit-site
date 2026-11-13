@@ -219,6 +219,11 @@ ul { list-style: none; }
   z-index: 2;
   padding: 5rem 0 4.5rem;
 }
+/* Desktop (>=720px): position the animation against .hero, not the content box. */
+@media (min-width: 720px) {
+  .hero-content { position: static; isolation: isolate; }
+  .hero-content > .hero-drone { max-width: none; }
+}
 
 /* v2: left-align hero copy in the container */
 .hero-content > * {
@@ -1212,7 +1217,18 @@ a:focus-visible, button:focus-visible, select:focus-visible, input:focus-visible
   50% { transform: translateY(-14px) rotate(1deg); }
 }
 @media (max-width: 719px) {
-  .hero-drone { display: none; }
+  .hero-drone {
+    display: block;
+    position: relative;
+    z-index: 1;
+    width: min(168px, 46vw);
+    max-width: 100%;
+    height: auto;
+    right: auto;
+    top: auto;
+    left: auto;
+    margin: 1.35rem 0 1.25rem;
+  }
 }
 @media (min-width: 720px) and (max-width: 1180px) {
   .hero-drone {

@@ -104,9 +104,24 @@ li.event-row[hidden] { display: none; }
     linear-gradient(90deg, rgba(10, 22, 40, 0.66) 0%, rgba(10, 22, 40, 0.58) 40%, rgba(10, 22, 40, 0.45) 70%, rgba(10, 22, 40, 0.50) 100%),
     linear-gradient(180deg, rgba(10, 22, 40, 0.32) 0%, rgba(10, 22, 40, 0.14) 40%, rgba(10, 22, 40, 0.61) 100%);
 }
-/* Keep the decoration off phones so it doesn't sit on the headline; show a smaller one from 720px. */
+/* Phones: smaller in-flow animation after the lead, before the buttons. Desktop unchanged. */
+@media (min-width: 720px) {
+  .hero-content { position: static; isolation: isolate; }
+  .hero-content > .hero-drone { max-width: none; }
+}
 @media (max-width: 719px) {
-  .hero-drone { display: none; }
+  .hero-drone {
+    display: block;
+    position: relative;
+    z-index: 1;
+    width: min(168px, 46vw);
+    max-width: 100%;
+    height: auto;
+    right: auto;
+    top: auto;
+    left: auto;
+    margin: 1.35rem 0 1.25rem;
+  }
 }
 @media (min-width: 720px) and (max-width: 1180px) {
   .hero-drone {
