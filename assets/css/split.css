@@ -58,3 +58,40 @@ details.price-group .pricing-table-wrap { margin: 0; overflow-x: auto; }
   details.price-group .pricing-table td:nth-child(2) { font-weight: 700; }
   details.price-group .pricing-table td:nth-child(3) { opacity: 0.8; font-size: 0.88rem; }
 }
+
+/* —— Events by week, monthly highlights, footer fine print, credits table (12 Nov 2026, 7 PM) —— */
+.events-tools { margin: 0.5rem 0 0.75rem; display: flex; justify-content: flex-end; }
+.events-weeks { display: block; }
+details.events-week { margin: 0 0 0.75rem; border: 1px solid rgba(232,238,247,0.16); border-radius: var(--radius, 12px); overflow: hidden; }
+details.events-week > summary { cursor: pointer; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 0.25rem 1rem; padding: 0.9rem 1.1rem; }
+details.events-week > summary:focus-visible { outline: 3px solid #ff853f; outline-offset: -3px; }
+.events-week-title { font-weight: 700; font-size: 1.1rem; }
+.events-week-meta { font-size: 0.9rem; opacity: 0.75; }
+.events-week-list { padding: 0 1rem 1rem; }
+.events-highlights { margin: 0.5rem 0 1.5rem; }
+.events-highlights-h { font-size: 1.35rem; margin: 0 0 0.75rem; }
+.events-highlights-row { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1rem; }
+.event-highlight { border: 2px solid #ff853f; border-radius: var(--radius, 12px); padding: 0.75rem; }
+.event-highlight-month { margin: 0 0 0.5rem; font-size: 0.8rem; letter-spacing: 0.08em; text-transform: uppercase; color: #ff853f; font-weight: 700; }
+.event-highlight .event-card { box-shadow: none; }
+.footer-fineprint { margin: 0.75rem 0 0; font-size: 0.78rem; opacity: 0.7; }
+.credits-h { margin: 0 0 1.25rem; }
+.credits-table-wrap { overflow-x: auto; }
+.credits-table { width: 100%; border-collapse: collapse; font-size: 0.85rem; }
+.credits-table th, .credits-table td { text-align: left; vertical-align: top; padding: 0.55rem 0.6rem; border-bottom: 1px solid rgba(127,140,160,0.3); overflow-wrap: anywhere; }
+.credits-table th { position: sticky; top: 60px; background: var(--page, #0a1628); }
+@media (max-width: 760px) {
+  .credits-table, .credits-table tbody, .credits-table tr, .credits-table td { display: block; width: 100%; }
+  .credits-table thead { display: none; }
+  .credits-table tr { padding: 0.75rem 0; border-bottom: 1px solid rgba(127,140,160,0.35); }
+  .credits-table td { border: 0; padding: 0.15rem 0; }
+  .credits-table td::before { content: attr(data-label) ": "; font-weight: 700; }
+}
+ul.events-week-list { list-style: none; margin: 0; padding: 0 1.1rem 0.5rem; }
+li.event-row { display: grid; grid-template-columns: 9.5rem 1fr 1fr; gap: 0.2rem 1rem; padding: 0.55rem 0; border-top: 1px solid rgba(232,238,247,0.1); font-size: 0.95rem; }
+li.event-row[hidden] { display: none; }
+.event-row-when { font-weight: 600; color: #ff853f; }
+.event-row-type { opacity: 0.7; font-size: 0.85rem; }
+.event-row-where { opacity: 0.85; }
+.events-week-more { margin: 0.25rem 1.1rem 1rem; }
+@media (max-width: 760px) { li.event-row { grid-template-columns: 1fr; } }

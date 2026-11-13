@@ -1,11 +1,3 @@
-# Photo credits and permissions
-
-Preview only. Every photo marked "to license (A)" must be licensed or replaced before fastrabbit.org goes public.
-
-Every image on the site is a sample. Each page image links to its full-size file in `assets/img/full/`; the smaller display copy sits in `assets/img/`. Photos were cropped and resized for this preview, and any credit must say so.
-
-Status key: **free – credited** = free licence, credit given here. **to license (A)** = all rights reserved by the owner; A is arranging permission. Owner contact details for those are kept in the private permissions tracker, not in this public file.
-
 | File (display + full) | Where it is used | Title / subject | Owner or photographer | Source | Licence | Full file resolution (original) | Status |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | listing-autumn.jpg | Gallery (first, large) and the Listing aerials card | Charming suburban home surrounded by vibrant autumn trees | New Zealand (Pexels user @newzealander) | https://www.pexels.com/photo/8054485/ | Pexels License — https://www.pexels.com/license/ — cropped | 3376×2250 (original 4000×2250) | free – credited |
@@ -41,7 +33,6 @@ Status key: **free – credited** = free licence, credit given here. **to licens
 | dusk-edits.jpg | Day-to-dusk edits card | A lakeside home with warmly lit windows at dusk, reflected in calm water | Cara Denison | https://www.pexels.com/photo/35097843/ | Pexels License — https://www.pexels.com/license/ — cropped, metadata stripped | 3840×2160 (original 4239×2826) | free – credited |
 | listing-extras.jpg | Listing finishing touches card | A country home with a long blue pool and a wide lawn, seen from above on a sunny day | Ahmet Kurt | https://www.pexels.com/photo/19119701/ | Pexels License — https://www.pexels.com/license/ — cropped, metadata stripped | 3840×2160 (original 5272×2962) | free – credited |
 | social-reels.jpg | Social reels, agent clips and rush delivery card | A street of family homes and green lawns in soft sunlight, seen from above with a gentle blur | David McBee | https://www.pexels.com/photo/1546168/ | Pexels License — https://www.pexels.com/license/ — cropped, metadata stripped | 3840×2160 (original 4000×2250) | free – credited |
-| agent-membership.jpg | Agent membership card | A row of white homes with blue pools along a green field, seen from above on a bright day | K | https://www.pexels.com/photo/30018116/ | Pexels License — https://www.pexels.com/license/ — cropped, metadata stripped | 3840×2160 (original 5146×2891) | free – credited |
 | coming-soon.jpg | Coming Soon teasers and neighbourhood reels card | Tree-lined streets and family homes around a crossroads, seen straight down on a sunny day | K | https://www.pexels.com/photo/8148350/ | Pexels License — https://www.pexels.com/license/ — cropped, metadata stripped | 3840×2160 (original 8000×3328) | free – credited |
 | four-season.jpg | Four-season capture card | Blazing autumn maples above a pale stony shoreline, seen from above on a bright day | Ali Soheil | https://www.pexels.com/photo/34747086/ | Pexels License — https://www.pexels.com/license/ — cropped, metadata stripped | 3840×2160 (original 16128×10090) | free – credited |
 | property-page.jpg | Single-property web page and feature sheet card | A new white family home with a fresh lawn and wide driveway, seen from above on a sunny day | Get Lost Mike | https://www.pexels.com/photo/5587962/ | Pexels License — https://www.pexels.com/license/ — cropped, metadata stripped | 3840×2160 (original 4000×2250) | free – credited |

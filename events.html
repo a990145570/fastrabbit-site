@@ -52,11 +52,12 @@
               <button type="button" class="chip" data-town="Port Hope">Port Hope</button>
             </div>
           </div>
+          <div id="events-highlights" class="events-highlights" aria-live="polite" hidden></div>
           <p class="events-intro">Markets, music, workshops and get-togethers coming up close to home, gathered for you every day.</p>
-          <div id="events-list" class="events-list" aria-live="polite">
+          <p class="events-tools"><button type="button" class="btn btn-ghost events-open-all" id="events-open-all" aria-pressed="false" hidden>Open every week</button></p>
+          <div id="events-list" class="events-weeks" data-group="week" aria-live="polite">
             <p class="events-empty">Loading local events…</p>
           </div>
-          <button type="button" class="btn btn-ghost events-more" id="events-more" hidden>Show more events</button>
           <p class="events-note">Dates and details can change, so check with the organiser before you go.</p>
         </div>
       </div>
@@ -94,8 +95,9 @@
       </div>
       <div class="footer-bottom">
         <span>© <span id="y">2026</span> FastRabbit Aeronautics · Cobourg, Ontario</span>
-        <span>Prices CAD before HST · <a href="CREDITS.md">Sample photos: see credits</a></span>
+        <span>Prices CAD before HST</span>
       </div>
+      <p class="footer-fineprint">Not all photos shown are locally produced. See our <a href="credits.html">photo credits</a> for details.</p>
     </div>
   </footer>
 

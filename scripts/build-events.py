@@ -194,6 +194,33 @@ def rewrite(e):
     }
 
 
+# One highlight per month: a big event, picked by a fixed rule so every run gives the same answer.
+# Tier 1: festivals, parades, Santa Claus parades and tree lightings. Tier 2: markets, fairs and bazaars.
+# Tier 3: events on more than one date. Tier 4: anything else.
+# Inside a tier: the longest blurb wins, then the earliest date (then time and title, as a final tie-break).
+BIG = re.compile(r"festival|parade|santa|tree lighting|light(?:ing)? up", re.I)
+FAIR = re.compile(r"market|fayre|fair\b|bazaar|craft sale", re.I)
+
+
+def pick_highlights(events):
+    for r in events:
+        r.pop("highlight", None)
+    best = {}
+    for r in events:
+        month = r["date"][:7]
+        words = r["title"] + " " + r["type"]
+        tier = 1 if BIG.search(words) else 2 if FAIR.search(words) else 3 if r.get("also") else 4
+        key = (tier, -len(r["blurb"]), r["date"], r["time"] or "99", r["title"])
+        if month not in best or key < best[month][0]:
+            best[month] = (key, r)
+    out = []
+    for month in sorted(best):
+        r = best[month][1]
+        r["highlight"] = True
+        out.append({"month": month, "title": r["title"], "date": r["date"]})
+    return out
+
+
 def main():
     cfg = json.load(open(CONFIG, encoding="utf-8"))
     f = Fetcher(cfg["user_agent"], cfg.get("min_delay_seconds", 10))
@@ -244,17 +271,18 @@ def main():
         if not r.get("also"):
             r.pop("also", None)
     events = events[: cfg.get("max_events", 60)]
+    highlights = pick_highlights(events)
     if not events and os.path.exists(OUT):
         note("[keep] no events gathered this run; leaving the previous file in place")
         return 0
-    data = {"updated": dt.datetime.now(TZ).replace(microsecond=0).isoformat(), "events": events}
+    data = {"updated": dt.datetime.now(TZ).replace(microsecond=0).isoformat(), "highlights": highlights, "events": events}
     old = None
     if os.path.exists(OUT):
         try:
             old = json.load(open(OUT, encoding="utf-8"))
         except Exception:
             pass
-    if old and old.get("events") == events:
+    if old and old.get("events") == events and old.get("highlights") == highlights:
         note(f"[same] {len(events)} events, unchanged")
         return 0
     os.makedirs(os.path.dirname(OUT), exist_ok=True)
