@@ -1190,11 +1190,11 @@ a:focus-visible, button:focus-visible, select:focus-visible, input:focus-visible
 .site-footer { background-color: #060d18; }
 .clever-card { background: linear-gradient(160deg, #0f1d33, #0d2128); }
 .form-field input, .form-field select, .form-field textarea, .form-field select option { background: #0c192d; }
-/* v14: hero animation restored (decorative, aria-hidden), darker navy overlay so copy and art both read */
+/* v14: hero animation restored (decorative, aria-hidden). Overlay lightened 12 Nov 2026 so the animation reads, especially on phones. */
 .hero-art::after {
   background:
-    linear-gradient(90deg, rgba(10, 22, 40, 0.92) 0%, rgba(10, 22, 40, 0.8) 40%, rgba(10, 22, 40, 0.62) 70%, rgba(10, 22, 40, 0.7) 100%),
-    linear-gradient(180deg, rgba(10, 22, 40, 0.45) 0%, rgba(10, 22, 40, 0.2) 40%, rgba(10, 22, 40, 0.85) 100%);
+    linear-gradient(90deg, rgba(10, 22, 40, 0.66) 0%, rgba(10, 22, 40, 0.58) 40%, rgba(10, 22, 40, 0.45) 70%, rgba(10, 22, 40, 0.50) 100%),
+    linear-gradient(180deg, rgba(10, 22, 40, 0.32) 0%, rgba(10, 22, 40, 0.14) 40%, rgba(10, 22, 40, 0.61) 100%);
 }
 .hero-drone {
   position: absolute;
@@ -1211,8 +1211,24 @@ a:focus-visible, button:focus-visible, select:focus-visible, input:focus-visible
   0%, 100% { transform: translateY(0) rotate(-2deg); }
   50% { transform: translateY(-14px) rotate(1deg); }
 }
-@media (max-width: 1180px) { .hero-drone { display: none; } }
+@media (max-width: 719px) {
+  .hero-drone { display: none; }
+}
+@media (min-width: 720px) and (max-width: 1180px) {
+  .hero-drone {
+    display: block;
+    width: min(220px, 26vw);
+    right: 3%;
+    top: 6%;
+  }
+}
 @media (prefers-reduced-motion: reduce) { .hero-drone { animation: none; } }
+.hero h1, .hero-lead, .hero .eyebrow, .hero-meta {
+  text-shadow: 0 1px 2px rgba(7, 17, 31, 0.85), 0 2px 14px rgba(7, 17, 31, 0.5);
+}
+.hero h1 span {
+  text-shadow: 0 1px 2px rgba(7, 17, 31, 0.9), 0 2px 16px rgba(7, 17, 31, 0.6);
+}
 .link-thumb { position: relative; display: block; }
 .link-thumb .stock-caption { right: 0.5rem; bottom: 0.9rem; font-weight: 500; }
 .form-field select optgroup { background: #0c192d; color: var(--text-strong); }
