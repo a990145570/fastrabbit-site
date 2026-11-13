@@ -1,5 +1,17 @@
 {
  "updated": "2026-11-12T17:49:58-05:00",
+ "highlights": [
+  {
+   "month": "2026-11",
+   "title": "Port Hope Santa Claus Parade",
+   "date": "2026-11-28"
+  },
+  {
+   "month": "2026-12",
+   "title": "A Very Merry Motown Christmas",
+   "date": "2026-12-05"
+  }
+ ],
  "events": [
   {
    "title": "Exhibition, ‘The World We Fear’",
@@ -593,7 +605,8 @@
    "place": "Port Hope",
    "town": "Port Hope",
    "type": "holiday celebration",
-   "blurb": "Pencil in a Saturday-afternoon holiday celebration in Port Hope."
+   "blurb": "Pencil in a Saturday-afternoon holiday celebration in Port Hope.",
+   "highlight": true
   },
   {
    "title": "Les AMIS Concert",
@@ -620,7 +633,8 @@
    "place": "Cobourg",
    "town": "Cobourg",
    "type": "live music event",
-   "blurb": "Come along to a Saturday live music event in Cobourg."
+   "blurb": "Come along to a Saturday live music event in Cobourg.",
+   "highlight": true
   },
   {
    "title": "Northumberland Orchestra Society- Swing Into The Season",
