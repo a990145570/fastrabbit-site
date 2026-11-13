@@ -95,3 +95,66 @@ li.event-row[hidden] { display: none; }
 .event-row-where { opacity: 0.85; }
 .events-week-more { margin: 0.25rem 1.1rem 1rem; }
 @media (max-width: 760px) { li.event-row { grid-template-columns: 1fr; } }
+
+/* —— Lighter hero fade and phone fit (12 Nov 2026, 8:43 PM) —— */
+/* Old fade (v14): 90deg 0.92 / 0.80 / 0.62 / 0.70 and 180deg 0.45 / 0.20 / 0.85.
+   New fade: about 28% less opacity, so the hero animation is easier to see. */
+.hero-art::after {
+  background:
+    linear-gradient(90deg, rgba(10, 22, 40, 0.66) 0%, rgba(10, 22, 40, 0.58) 40%, rgba(10, 22, 40, 0.45) 70%, rgba(10, 22, 40, 0.50) 100%),
+    linear-gradient(180deg, rgba(10, 22, 40, 0.32) 0%, rgba(10, 22, 40, 0.14) 40%, rgba(10, 22, 40, 0.61) 100%);
+}
+/* Keep the decoration off phones so it doesn't sit on the headline; show a smaller one from 720px. */
+@media (max-width: 719px) {
+  .hero-drone { display: none; }
+}
+@media (min-width: 720px) and (max-width: 1180px) {
+  .hero-drone {
+    display: block;
+    width: min(220px, 26vw);
+    right: 3%;
+    top: 6%;
+  }
+}
+.hero h1, .hero-lead, .hero .eyebrow, .hero-meta {
+  text-shadow: 0 1px 2px rgba(7, 17, 31, 0.85), 0 2px 14px rgba(7, 17, 31, 0.5);
+}
+.hero h1 span {
+  text-shadow: 0 1px 2px rgba(7, 17, 31, 0.9), 0 2px 16px rgba(7, 17, 31, 0.6);
+}
+
+img, svg, video, iframe, embed { max-width: 100%; }
+.form-field, .form-grid, .booking-wrap, .booking-aside, .booking-card,
+.community-grid, .community-card, .events-block, .events-list,
+.credits-table-wrap, .footer-grid, .container, .home-cards, .group-tiles,
+.clever-band, .clever-band-art, .clever-band-copy {
+  min-width: 0;
+  max-width: 100%;
+}
+.form-field input,
+.form-field select,
+.form-field textarea {
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
+}
+.events-list { grid-template-columns: repeat(auto-fill, minmax(min(290px, 100%), 1fr)); }
+.events-highlights-row { grid-template-columns: repeat(auto-fit, minmax(min(260px, 100%), 1fr)); }
+a, .form-small, .form-disclaimer, .footer-fineprint, .footer-brand p {
+  overflow-wrap: anywhere;
+}
+@media (max-width: 960px) {
+  .booking-wrap { grid-template-columns: minmax(0, 1fr); }
+}
+@media (max-width: 560px) {
+  .booking-card { padding: 1.15rem; }
+}
+.service-detail-grid, .service-detail-grid > *, .price-panel, .price-row, .price-row .label {
+  min-width: 0;
+  max-width: 100%;
+}
+.service-detail h2, .price-row .label, .lede, .include-list { overflow-wrap: anywhere; }
+@media (max-width: 960px) {
+  .service-detail-grid { grid-template-columns: minmax(0, 1fr); }
+}
