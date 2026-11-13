@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-12T17:49:58-05:00",
+ "updated": "2026-11-13T12:47:00-05:00",
  "highlights": [
   {
    "month": "2026-11",
@@ -15,85 +15,44 @@
  "events": [
   {
    "title": "Exhibition, ‘The World We Fear’",
-   "date": "2026-11-12",
+   "date": "2026-11-13",
    "time": "10:00",
    "place": "Art Gallery of Northumberland, Cobourg",
    "town": "Cobourg",
    "type": "art event",
-   "blurb": "A Thursday-morning art event at Art Gallery of Northumberland, Cobourg.",
+   "blurb": "Pencil in a Friday-morning art event at Art Gallery of Northumberland, Cobourg.",
    "also": [
-    "2026-11-13",
     "2026-11-14",
-    "2026-11-15"
+    "2026-11-15",
+    "2026-11-17"
    ]
   },
   {
    "title": "Exhibition, ‘At the Threshold: Selections from the Permanent Collection’",
-   "date": "2026-11-12",
+   "date": "2026-11-13",
    "time": "10:00",
    "place": "Art Gallery of Northumberland, Cobourg",
    "town": "Cobourg",
    "type": "art event",
-   "blurb": "Come along to a Thursday-morning art event at Art Gallery of Northumberland, Cobourg.",
+   "blurb": "Pencil in a Friday-morning art event at Art Gallery of Northumberland, Cobourg.",
    "also": [
-    "2026-11-13",
     "2026-11-14",
-    "2026-11-15"
+    "2026-11-15",
+    "2026-11-17"
    ]
   },
   {
    "title": "The Sky's The Limit by artist Helen Van Poorten",
-   "date": "2026-11-12",
+   "date": "2026-11-13",
    "time": "11:00",
    "place": "Port Hope",
    "town": "Port Hope",
    "type": "art event",
-   "blurb": "Pencil in a Thursday-morning art event in Port Hope.",
+   "blurb": "A Friday-morning art event in Port Hope.",
    "also": [
-    "2026-11-13",
     "2026-11-14",
     "2026-11-15"
    ]
-  },
-  {
-   "title": "Woodland Christmas Urn",
-   "date": "2026-11-12",
-   "time": "13:00",
-   "place": "Baltimore Valley Garden Centre, Cobourg",
-   "town": "Cobourg",
-   "type": "hands-on workshop",
-   "blurb": "A Thursday-afternoon hands-on workshop at Baltimore Valley Garden Centre, Cobourg."
-  },
-  {
-   "title": "Merry and Bright at Clark’s Christmas Market",
-   "date": "2026-11-12",
-   "time": "16:00",
-   "place": "Clark Blossoms, Port Hope",
-   "town": "Port Hope",
-   "type": "market",
-   "blurb": "Come along to a Thursday-afternoon market at Clark Blossoms, Port Hope."
-  },
-  {
-   "title": "Teen Trivia/Game Night",
-   "date": "2026-11-12",
-   "time": "18:30",
-   "place": "Port Hope",
-   "town": "Port Hope",
-   "type": "games session",
-   "blurb": "Come along to a Thursday-evening games session in Port Hope.",
-   "also": [
-    "2026-11-19",
-    "2026-11-26"
-   ]
-  },
-  {
-   "title": "NLC Fall Program – Arctic Rising",
-   "date": "2026-11-12",
-   "time": "19:30",
-   "place": "Cobourg",
-   "town": "Cobourg",
-   "type": "art event",
-   "blurb": "Pencil in a Thursday-evening art event in Cobourg."
   },
   {
    "title": "Clark’s Christmas Market",
@@ -440,6 +399,48 @@
    "town": "Cobourg",
    "type": "fundraising evening",
    "blurb": "Pencil in a Thursday-evening fundraising evening at Best Western Plus Cobourg, Cobourg."
+  },
+  {
+   "title": "Teen Trivia/Game Night",
+   "date": "2026-11-19",
+   "time": "18:30",
+   "place": "Port Hope",
+   "town": "Port Hope",
+   "type": "games session",
+   "blurb": "Pencil in a Thursday-evening games session in Port Hope.",
+   "also": [
+    "2026-11-26"
+   ]
+  },
+  {
+   "title": "Disney’s FROZEN – The Broadway Musical",
+   "date": "2026-11-19",
+   "time": "19:00",
+   "place": "Concert Hall at Victoria Hall, Cobourg",
+   "town": "Cobourg",
+   "type": "stage show",
+   "blurb": "Join neighbours for a Thursday-evening stage show at Concert Hall at Victoria Hall, Cobourg."
+  },
+  {
+   "title": "Spotlight Series 8",
+   "date": "2026-11-19",
+   "time": "19:00",
+   "place": "Art Gallery of Northumberland, Cobourg",
+   "town": "Cobourg",
+   "type": "art event",
+   "blurb": "Come along to a Thursday-evening art event at Art Gallery of Northumberland, Cobourg."
+  },
+  {
+   "title": "NLC Fall Program – Arctic Rising",
+   "date": "2026-11-19",
+   "time": "19:30",
+   "place": "Cobourg",
+   "town": "Cobourg",
+   "type": "art event",
+   "blurb": "Come along to a Thursday-evening art event in Cobourg.",
+   "also": [
+    "2026-11-20"
+   ]
   },
   {
    "title": "The Festival of Lights and Trees",
