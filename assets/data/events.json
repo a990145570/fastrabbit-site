@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-13T12:47:00-05:00",
+ "updated": "2026-11-14T11:37:56-05:00",
  "highlights": [
   {
    "month": "2026-11",
@@ -13,69 +13,6 @@
   }
  ],
  "events": [
-  {
-   "title": "Exhibition, ‘The World We Fear’",
-   "date": "2026-11-13",
-   "time": "10:00",
-   "place": "Art Gallery of Northumberland, Cobourg",
-   "town": "Cobourg",
-   "type": "art event",
-   "blurb": "Pencil in a Friday-morning art event at Art Gallery of Northumberland, Cobourg.",
-   "also": [
-    "2026-11-14",
-    "2026-11-15",
-    "2026-11-17"
-   ]
-  },
-  {
-   "title": "Exhibition, ‘At the Threshold: Selections from the Permanent Collection’",
-   "date": "2026-11-13",
-   "time": "10:00",
-   "place": "Art Gallery of Northumberland, Cobourg",
-   "town": "Cobourg",
-   "type": "art event",
-   "blurb": "Pencil in a Friday-morning art event at Art Gallery of Northumberland, Cobourg.",
-   "also": [
-    "2026-11-14",
-    "2026-11-15",
-    "2026-11-17"
-   ]
-  },
-  {
-   "title": "The Sky's The Limit by artist Helen Van Poorten",
-   "date": "2026-11-13",
-   "time": "11:00",
-   "place": "Port Hope",
-   "town": "Port Hope",
-   "type": "art event",
-   "blurb": "A Friday-morning art event in Port Hope.",
-   "also": [
-    "2026-11-14",
-    "2026-11-15"
-   ]
-  },
-  {
-   "title": "Clark’s Christmas Market",
-   "date": "2026-11-13",
-   "time": "13:00",
-   "place": "Clark Blossoms, Port Hope",
-   "town": "Port Hope",
-   "type": "market",
-   "blurb": "Pencil in a Friday-afternoon market at Clark Blossoms, Port Hope.",
-   "also": [
-    "2026-11-14",
-    "2026-11-15"
-   ]
-  },
-  {
-   "title": "SONG’s Next Gen SoundStage",
-   "date": "2026-11-13",
-   "time": "19:00",
-   "place": "Cameco Capitol Arts Centre, Port Hope",
-   "town": "Port Hope",
-   "type": "live music event",
-   "blurb": "Pencil in a Friday-evening live music event at Cameco Capitol Arts Centre, Port Hope."
-  },
   {
    "title": "Christmas Bazaar",
    "date": "2026-11-14",
@@ -140,6 +77,59 @@
    "blurb": "A Saturday-morning hands-on workshop at Old Camborne Schoolhouse, Cobourg.",
    "also": [
     "2026-11-15"
+   ]
+  },
+  {
+   "title": "The Sky's The Limit by artist Helen Van Poorten",
+   "date": "2026-11-14",
+   "time": "11:00",
+   "place": "Port Hope",
+   "town": "Port Hope",
+   "type": "art event",
+   "blurb": "A Saturday-morning art event in Port Hope.",
+   "also": [
+    "2026-11-15"
+   ]
+  },
+  {
+   "title": "Clark’s Christmas Market",
+   "date": "2026-11-14",
+   "time": "12:00",
+   "place": "Clark Blossoms, Port Hope",
+   "town": "Port Hope",
+   "type": "market",
+   "blurb": "Come along to a Saturday-afternoon market at Clark Blossoms, Port Hope.",
+   "also": [
+    "2026-11-15",
+    "2026-11-20"
+   ]
+  },
+  {
+   "title": "Exhibition, ‘The World We Fear’",
+   "date": "2026-11-14",
+   "time": "12:00",
+   "place": "Art Gallery of Northumberland, Cobourg",
+   "town": "Cobourg",
+   "type": "art event",
+   "blurb": "A Saturday-afternoon art event at Art Gallery of Northumberland, Cobourg.",
+   "also": [
+    "2026-11-15",
+    "2026-11-17",
+    "2026-11-18"
+   ]
+  },
+  {
+   "title": "Exhibition, ‘At the Threshold: Selections from the Permanent Collection’",
+   "date": "2026-11-14",
+   "time": "12:00",
+   "place": "Art Gallery of Northumberland, Cobourg",
+   "town": "Cobourg",
+   "type": "art event",
+   "blurb": "Pencil in a Saturday-afternoon art event at Art Gallery of Northumberland, Cobourg.",
+   "also": [
+    "2026-11-15",
+    "2026-11-17",
+    "2026-11-18"
    ]
   },
   {
@@ -441,6 +431,24 @@
    "also": [
     "2026-11-20"
    ]
+  },
+  {
+   "title": "Christmas Magic Market",
+   "date": "2026-11-20",
+   "time": "16:00",
+   "place": "Cobourg Rotary Harbourfront Park, Cobourg",
+   "town": "Cobourg",
+   "type": "market",
+   "blurb": "Come along to a Friday-afternoon market at Cobourg Rotary Harbourfront Park, Cobourg."
+  },
+  {
+   "title": "A Downtown Cobourg Christmas and Christmas Magic Light-Up Celebration",
+   "date": "2026-11-20",
+   "time": "16:00",
+   "place": "Downtown Cobourg, Cobourg",
+   "town": "Cobourg",
+   "type": "live music event",
+   "blurb": "Come along to a Friday-afternoon live music event at Downtown Cobourg, Cobourg."
   },
   {
    "title": "The Festival of Lights and Trees",
