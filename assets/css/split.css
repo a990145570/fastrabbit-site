@@ -173,3 +173,14 @@ a, .form-small, .form-disclaimer, .footer-fineprint, .footer-brand p {
 @media (max-width: 960px) {
   .service-detail-grid { grid-template-columns: minmax(0, 1fr); }
 }
+
+/* Banner logo (A, 16 Nov 2026): artwork is used as-is, including its #282828 background. */
+.site-header .logo img,
+.site-header .logo-banner {
+  height: 38px;
+  max-width: min(220px, 58vw);
+}
+@media (max-width: 390px) {
+  .site-header .logo img,
+  .site-header .logo-banner { height: 32px; max-width: min(188px, 56vw); }
+}

@@ -85,23 +85,26 @@ ul { list-style: none; }
 .logo {
   display: flex;
   align-items: center;
-  gap: 0.65rem;
+  flex: 0 1 auto;
+  min-width: 0;
   color: var(--white);
-  font-weight: 700;
-  letter-spacing: -0.02em;
 }
 
-.logo-mark {
-  width: 34px;
-  height: 34px;
-  border-radius: 9px;
-  background: linear-gradient(135deg, var(--orange-500), var(--orange-600));
-  display: grid;
-  place-items: center;
-  box-shadow: 0 0 0 3px rgba(255, 107, 26, 0.2);
+.logo img,
+.logo-banner {
+  display: block;
+  height: 42px;
+  width: auto;
+  max-width: min(240px, 62vw);
+  object-fit: contain;
+  object-position: left center;
 }
 
-.logo-mark svg { width: 18px; height: 18px; }
+.footer-brand .logo img,
+.footer-brand .logo-banner {
+  height: 52px;
+  max-width: min(280px, 100%);
+}
 
 .nav-links {
   display: flex;
