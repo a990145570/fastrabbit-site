@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-16T23:30:57-05:00",
+ "updated": "2026-11-17T14:12:43-05:00",
  "highlights": [
   {
    "month": "2026-11",
@@ -13,32 +13,6 @@
   }
  ],
  "events": [
-  {
-   "title": "Baby Time at PHPL",
-   "date": "2026-11-16",
-   "time": "11:00",
-   "place": "Port Hope",
-   "town": "Port Hope",
-   "type": "family-friendly get-together",
-   "blurb": "Come along to a Monday-morning family-friendly get-together in Port Hope.",
-   "also": [
-    "2026-11-23",
-    "2026-11-30"
-   ]
-  },
-  {
-   "title": "Unfinished Stitchery",
-   "date": "2026-11-16",
-   "time": "14:00",
-   "place": "Port Hope",
-   "town": "Port Hope",
-   "type": "hands-on workshop",
-   "blurb": "Pencil in a Monday-afternoon hands-on workshop in Port Hope.",
-   "also": [
-    "2026-11-23",
-    "2026-11-30"
-   ]
-  },
   {
    "title": "Exhibition, ‘The World We Fear’",
    "date": "2026-11-17",
@@ -518,6 +492,30 @@
    "blurb": "A Sunday-morning games session in Port Hope.",
    "also": [
     "2026-11-29"
+   ]
+  },
+  {
+   "title": "Baby Time at PHPL",
+   "date": "2026-11-23",
+   "time": "11:00",
+   "place": "Port Hope",
+   "town": "Port Hope",
+   "type": "family-friendly get-together",
+   "blurb": "Come along to a Monday-morning family-friendly get-together in Port Hope.",
+   "also": [
+    "2026-11-30"
+   ]
+  },
+  {
+   "title": "Unfinished Stitchery",
+   "date": "2026-11-23",
+   "time": "14:00",
+   "place": "Port Hope",
+   "town": "Port Hope",
+   "type": "hands-on workshop",
+   "blurb": "Pencil in a Monday-afternoon hands-on workshop in Port Hope.",
+   "also": [
+    "2026-11-30"
    ]
   },
   {
