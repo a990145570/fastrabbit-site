@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-16T15:31:30-05:00",
+ "updated": "2026-11-16T23:30:57-05:00",
  "highlights": [
   {
    "month": "2026-11",
@@ -609,6 +609,15 @@
    "town": "Cobourg",
    "type": "holiday celebration",
    "blurb": "A Monday holiday celebration in Cobourg."
+  },
+  {
+   "title": "Christmas Wassail",
+   "date": "2026-12-05",
+   "time": "",
+   "place": "Cobourg",
+   "town": "Cobourg",
+   "type": "holiday celebration",
+   "blurb": "Come along to a Saturday holiday celebration in Cobourg."
   },
   {
    "title": "A Very Merry Motown Christmas",
