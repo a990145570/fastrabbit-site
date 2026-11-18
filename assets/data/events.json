@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-17T14:12:43-05:00",
+ "updated": "2026-11-18T13:53:14-05:00",
  "highlights": [
   {
    "month": "2026-11",
@@ -15,58 +15,31 @@
  "events": [
   {
    "title": "Exhibition, ‘The World We Fear’",
-   "date": "2026-11-17",
+   "date": "2026-11-18",
    "time": "10:00",
    "place": "Art Gallery of Northumberland, Cobourg",
    "town": "Cobourg",
    "type": "art event",
-   "blurb": "Come along to a Tuesday-morning art event at Art Gallery of Northumberland, Cobourg.",
+   "blurb": "Join neighbours for a Wednesday-morning art event at Art Gallery of Northumberland, Cobourg.",
    "also": [
-    "2026-11-18",
     "2026-11-19",
-    "2026-11-20"
+    "2026-11-20",
+    "2026-11-21"
    ]
   },
   {
    "title": "Exhibition, ‘At the Threshold: Selections from the Permanent Collection’",
-   "date": "2026-11-17",
+   "date": "2026-11-18",
    "time": "10:00",
    "place": "Art Gallery of Northumberland, Cobourg",
    "town": "Cobourg",
    "type": "art event",
-   "blurb": "Come along to a Tuesday-morning art event at Art Gallery of Northumberland, Cobourg.",
+   "blurb": "Pencil in a Wednesday-morning art event at Art Gallery of Northumberland, Cobourg.",
    "also": [
-    "2026-11-18",
     "2026-11-19",
-    "2026-11-20"
+    "2026-11-20",
+    "2026-11-21"
    ]
-  },
-  {
-   "title": "Lunch and Learn",
-   "date": "2026-11-17",
-   "time": "11:30",
-   "place": "Port Hope",
-   "town": "Port Hope",
-   "type": "talk",
-   "blurb": "Pencil in a Tuesday-morning talk in Port Hope."
-  },
-  {
-   "title": "Community 101: Changing the Story Around Homelessness Part 1",
-   "date": "2026-11-17",
-   "time": "17:30",
-   "place": "Port Hope",
-   "town": "Port Hope",
-   "type": "talk",
-   "blurb": "Come along to a Tuesday-evening talk in Port Hope."
-  },
-  {
-   "title": "Double Brim Beanie",
-   "date": "2026-11-17",
-   "time": "18:30",
-   "place": "Yarn It, Cobourg",
-   "town": "Cobourg",
-   "type": "hands-on workshop",
-   "blurb": "Come along to a Tuesday-evening hands-on workshop at Yarn It, Cobourg."
   },
   {
    "title": "A Winter Welcome",
@@ -481,6 +454,33 @@
    "town": "Cobourg",
    "type": "live music event",
    "blurb": "A Saturday live music event in Cobourg."
+  },
+  {
+   "title": "The Great Gingerbread Build-Off Workshop",
+   "date": "2026-11-22",
+   "time": "10:00",
+   "place": "Knights of Columbus Hall, Port Hope, Port Hope",
+   "town": "Port Hope",
+   "type": "hands-on workshop",
+   "blurb": "A Sunday-morning hands-on workshop at Knights of Columbus Hall, Port Hope, Port Hope."
+  },
+  {
+   "title": "Northumberland Antique/Vintage Show and Sale",
+   "date": "2026-11-22",
+   "time": "10:00",
+   "place": "Lions Centre, Cobourg",
+   "town": "Cobourg",
+   "type": "market",
+   "blurb": "Pencil in a Sunday-morning market at Lions Centre, Cobourg."
+  },
+  {
+   "title": "Agn Vibes",
+   "date": "2026-11-22",
+   "time": "11:00",
+   "place": "Art Gallery of Northumberland, Cobourg",
+   "town": "Cobourg",
+   "type": "art event",
+   "blurb": "Join neighbours for a Sunday-morning art event at Art Gallery of Northumberland, Cobourg."
   },
   {
    "title": "Sunday Scrabble and Chess Drop-in",
