@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-18T13:53:14-05:00",
+ "updated": "2026-11-19T14:00:40-05:00",
  "highlights": [
   {
    "month": "2026-11",
@@ -14,64 +14,6 @@
  ],
  "events": [
   {
-   "title": "Exhibition, ‘The World We Fear’",
-   "date": "2026-11-18",
-   "time": "10:00",
-   "place": "Art Gallery of Northumberland, Cobourg",
-   "town": "Cobourg",
-   "type": "art event",
-   "blurb": "Join neighbours for a Wednesday-morning art event at Art Gallery of Northumberland, Cobourg.",
-   "also": [
-    "2026-11-19",
-    "2026-11-20",
-    "2026-11-21"
-   ]
-  },
-  {
-   "title": "Exhibition, ‘At the Threshold: Selections from the Permanent Collection’",
-   "date": "2026-11-18",
-   "time": "10:00",
-   "place": "Art Gallery of Northumberland, Cobourg",
-   "town": "Cobourg",
-   "type": "art event",
-   "blurb": "Pencil in a Wednesday-morning art event at Art Gallery of Northumberland, Cobourg.",
-   "also": [
-    "2026-11-19",
-    "2026-11-20",
-    "2026-11-21"
-   ]
-  },
-  {
-   "title": "A Winter Welcome",
-   "date": "2026-11-18",
-   "time": "10:00",
-   "place": "Baltimore Valley Garden Centre, Cobourg",
-   "town": "Cobourg",
-   "type": "hands-on workshop",
-   "blurb": "A Wednesday-morning hands-on workshop at Baltimore Valley Garden Centre, Cobourg."
-  },
-  {
-   "title": "Toddlers and Waddlers with EarlyON",
-   "date": "2026-11-18",
-   "time": "10:30",
-   "place": "Port Hope",
-   "town": "Port Hope",
-   "type": "family-friendly get-together",
-   "blurb": "Join neighbours for a Wednesday-morning family-friendly get-together in Port Hope.",
-   "also": [
-    "2026-11-25"
-   ]
-  },
-  {
-   "title": "Christmas wreath",
-   "date": "2026-11-18",
-   "time": "18:00",
-   "place": "Rosie Young Design Studio, Cobourg",
-   "town": "Cobourg",
-   "type": "hands-on workshop",
-   "blurb": "Join neighbours for a Wednesday-evening hands-on workshop at Rosie Young Design Studio, Cobourg."
-  },
-  {
    "title": "Women Abuse Prevention Month - Wrapped in Courage Flag Raising",
    "date": "2026-11-19",
    "time": "07:00",
@@ -79,6 +21,33 @@
    "town": "Port Hope",
    "type": "community gathering",
    "blurb": "A Thursday-morning community gathering in Port Hope."
+  },
+  {
+   "title": "Exhibition, ‘The World We Fear’",
+   "date": "2026-11-19",
+   "time": "10:00",
+   "place": "Art Gallery of Northumberland, Cobourg",
+   "town": "Cobourg",
+   "type": "art event",
+   "blurb": "Come along to a Thursday-morning art event at Art Gallery of Northumberland, Cobourg.",
+   "also": [
+    "2026-11-20",
+    "2026-11-21",
+    "2026-11-22"
+   ]
+  },
+  {
+   "title": "Exhibition, ‘At the Threshold: Selections from the Permanent Collection’",
+   "date": "2026-11-19",
+   "time": "10:00",
+   "place": "Art Gallery of Northumberland, Cobourg",
+   "town": "Cobourg",
+   "type": "art event",
+   "blurb": "Come along to a Thursday-morning art event at Art Gallery of Northumberland, Cobourg.",
+   "also": [
+    "2026-11-20",
+    "2026-11-21"
+   ]
   },
   {
    "title": "Parks and Trails Plan Open House: Draft Plan",
@@ -183,7 +152,8 @@
    "type": "market",
    "blurb": "Come along to a Friday-afternoon market at Clark Blossoms, Port Hope.",
    "also": [
-    "2026-11-21"
+    "2026-11-21",
+    "2026-11-22"
    ]
   },
   {
@@ -213,7 +183,8 @@
    "type": "festival",
    "blurb": "Come along to a Friday-evening festival at Cameco Capitol Arts Centre, Port Hope.",
    "also": [
-    "2026-11-21"
+    "2026-11-21",
+    "2026-11-22"
    ],
    "highlight": true
   },
@@ -289,6 +260,15 @@
    "town": "Cobourg",
    "type": "hands-on workshop",
    "blurb": "Come along to a Saturday-morning hands-on workshop at Baltimore Valley Garden Centre, Cobourg."
+  },
+  {
+   "title": "Trinity Holly Tea and Christmas Market",
+   "date": "2026-11-21",
+   "time": "10:00",
+   "place": "Trinity United Church, Cobourg",
+   "town": "Cobourg",
+   "type": "market",
+   "blurb": "A Saturday-morning market at Trinity United Church, Cobourg."
   },
   {
    "title": "Beauty Secrets of the Bees: Honey Based Wellness Workshop",
@@ -535,6 +515,15 @@
    "town": "Port Hope",
    "type": "talk",
    "blurb": "A Tuesday-evening talk in Port Hope."
+  },
+  {
+   "title": "Toddlers and Waddlers with EarlyON",
+   "date": "2026-11-25",
+   "time": "10:30",
+   "place": "Port Hope",
+   "town": "Port Hope",
+   "type": "family-friendly get-together",
+   "blurb": "A Wednesday-morning family-friendly get-together in Port Hope."
   },
   {
    "title": "International Day for the Elimination of Violence Against Women",
