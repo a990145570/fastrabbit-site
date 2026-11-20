@@ -1074,7 +1074,7 @@ a.stock-caption:hover {
   flex-direction: column;
   justify-content: flex-end;
   min-height: 170px;
-  padding: 1.1rem 1.1rem 1rem;
+  padding: 1.1rem 1.1rem 1.55rem;
   border-radius: var(--radius);
   color: #fff;
   text-decoration: none;
@@ -1084,6 +1084,20 @@ a.stock-caption:hover {
   box-shadow: var(--shadow);
   border: 3px solid transparent;
 }
+.group-tile::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 6.1rem;
+  pointer-events: none;
+  z-index: 0;
+  border-radius: 0 0 var(--radius) var(--radius);
+  background: linear-gradient(to top, rgba(8, 18, 38, 0.92) 0%, rgba(8, 18, 38, 0.78) 42%, rgba(8, 18, 38, 0) 100%);
+}
+.group-tile strong,
+.group-tile span { position: relative; z-index: 1; }
 .group-tile strong { font-size: 1.12rem; letter-spacing: -0.01em; line-height: 1.2; }
 .group-tile span { font-size: 0.82rem; opacity: 0.85; margin-top: 0.25rem; }
 .group-tile[aria-selected="true"] { border-color: var(--orange-500); }
@@ -1141,7 +1155,8 @@ a.stock-caption:hover {
 }
 @media (max-width: 640px) {
   .group-tiles { grid-template-columns: repeat(2, 1fr); gap: 0.7rem; }
-  .group-tile { min-height: 120px; padding: 0.85rem; }
+  .group-tile { min-height: 120px; padding: 0.85rem 0.85rem 1.2rem; }
+  .group-tile::after { height: 5.6rem; }
   .group-tile strong { font-size: 1rem; }
   .link-cards { grid-template-columns: 1fr; }
 }
@@ -1324,33 +1339,52 @@ a:focus-visible, button:focus-visible, select:focus-visible, input:focus-visible
 @media (max-width: 820px) { .community-grid { grid-template-columns: 1fr; } }
 
 /* ---------- Services lead-in banner ---------- */
-.services-banner { position: relative; overflow: hidden; background: var(--navy-900); color: var(--white); display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(16rem, 0.9fr); align-items: stretch; min-height: 32rem; }
+.services-banner { position: relative; overflow: hidden; background: var(--navy-900); color: var(--white); min-height: 420px; display: flex; align-items: flex-end; }
 .services-banner-bg {
-  position: relative;
-  min-height: 32rem;
-  order: 2;
+  position: absolute;
+  inset: 0;
   background-color: var(--navy-900);
   background-image: url("../img/glow-banner.jpg");
   background-image: image-set(url("../img/glow-banner.webp") type("image/webp"), url("../img/glow-banner.jpg") type("image/jpeg"));
-  background-position: right center;
+  background-position: right 70%;
   background-size: cover;
   background-repeat: no-repeat;
 }
-.services-banner-txt { position: relative; z-index: 1; padding-top: 3.5rem; padding-bottom: 3.5rem; display: flex; flex-direction: column; justify-content: center; }
+/* Same idea as the hero: darker on the left and along the bottom so the copy reads, while the right stays clearer. */
+.services-banner::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(90deg, rgba(7, 17, 31, 0.82) 0%, rgba(7, 17, 31, 0.58) 38%, rgba(7, 17, 31, 0.18) 68%, rgba(7, 17, 31, 0.10) 100%),
+    linear-gradient(180deg, rgba(7, 17, 31, 0.20) 0%, rgba(7, 17, 31, 0.08) 40%, rgba(7, 17, 31, 0.72) 100%);
+}
+.services-banner-txt { position: relative; z-index: 1; padding-top: 5rem; padding-bottom: 3rem; }
 .services-banner h2 { color: var(--white); font-size: clamp(2rem, 4.2vw, 3.2rem); line-height: 1.05; letter-spacing: -0.02em; max-width: 820px; margin: 0 0 1rem; }
 .services-banner h2 em { font-style: normal; color: #ff6b1a; }
 .services-banner p { color: #e8eef7; font-size: 1.1rem; line-height: 1.6; max-width: 720px; margin: 0; }
-@media (min-width: 961px) {
-  .services-banner > .container.services-banner-txt {
-    width: auto;
-    max-width: none;
-    margin-inline: 0;
-    padding-left: max(1.25rem, calc((100vw - 1120px) / 2));
-    padding-right: 2rem;
+@media (max-width: 640px) {
+  /* Overlaying the copy on the photo covers the aircraft at 320/390, so on small screens the copy sits above a full-width image. */
+  .services-banner {
+    min-height: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
   }
-}
-@media (max-width: 960px) {
-  .services-banner { display: flex; flex-direction: column; align-items: stretch; min-height: 0; }
-  .services-banner-txt { order: 1; padding-top: 2.5rem; padding-bottom: 1.5rem; }
-  .services-banner-bg { order: 2; inset: auto; width: 100%; min-height: 0; aspect-ratio: 1376 / 768; background-position: center; background-size: 100% 100%; }
+  .services-banner::after { display: none; }
+  .services-banner-txt {
+    order: 1;
+    padding-top: 2.5rem;
+    padding-bottom: 1.5rem;
+  }
+  .services-banner-bg {
+    position: relative;
+    inset: auto;
+    order: 2;
+    width: 100%;
+    min-height: 0;
+    aspect-ratio: 1920 / 1080;
+    background-position: center;
+    background-size: 100% 100%;
+  }
 }
