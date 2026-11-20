@@ -6,4 +6,4 @@ Static site for FastRabbit (fastrabbit.org): aerial photography based in Cobourg
 - `services.html` — services and pricing
 - `CREDITS.md` — photo credits and permissions tracker
 
-Prices are in CAD before HST. Booking from January 2027.
+Prices are in CAD before HST. Opening soon.
