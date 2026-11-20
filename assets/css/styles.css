@@ -1074,7 +1074,7 @@ a.stock-caption:hover {
   flex-direction: column;
   justify-content: flex-end;
   min-height: 170px;
-  padding: 1.1rem 1.1rem 1.55rem;
+  padding: 1.1rem 1.1rem 3.1rem;
   border-radius: var(--radius);
   color: #fff;
   text-decoration: none;
@@ -1084,22 +1084,17 @@ a.stock-caption:hover {
   box-shadow: var(--shadow);
   border: 3px solid transparent;
 }
-.group-tile::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  height: 6.1rem;
-  pointer-events: none;
-  z-index: 0;
-  border-radius: 0 0 var(--radius) var(--radius);
-  background: linear-gradient(to top, rgba(8, 18, 38, 0.92) 0%, rgba(8, 18, 38, 0.78) 42%, rgba(8, 18, 38, 0) 100%);
+/* v2 tile label: a fitted dark box behind only the title and count; the rest of the photo stays clear */
+.group-tile .tile-label {
+  align-self: flex-start;
+  max-width: 100%;
+  padding: 0.5rem 0.75rem 0.55rem;
+  border-radius: 0.65rem;
+  background: rgba(8, 18, 38, 0.82);
+  line-height: 1.25;
 }
-.group-tile strong,
-.group-tile span { position: relative; z-index: 1; }
 .group-tile strong { font-size: 1.12rem; letter-spacing: -0.01em; line-height: 1.2; }
-.group-tile span { font-size: 0.82rem; opacity: 0.85; margin-top: 0.25rem; }
+.group-tile span { display: block; font-size: 0.82rem; opacity: 0.92; margin-top: 0.25rem; }
 .group-tile[aria-selected="true"] { border-color: var(--orange-500); }
 .group-tile:focus-visible { outline: 3px solid var(--orange-400); outline-offset: 3px; }
 .group-panel { margin: 0 0 2.75rem; scroll-margin-top: 90px; }
@@ -1155,10 +1150,16 @@ a.stock-caption:hover {
 }
 @media (max-width: 640px) {
   .group-tiles { grid-template-columns: repeat(2, 1fr); gap: 0.7rem; }
-  .group-tile { min-height: 120px; padding: 0.85rem 0.85rem 1.2rem; }
-  .group-tile::after { height: 5.6rem; }
+  .group-tile { min-height: 120px; padding: 0.85rem 0.85rem 2.5rem; }
+  .group-tile .tile-label { padding: 0.4rem 0.6rem 0.45rem; border-radius: 0.55rem; }
   .group-tile strong { font-size: 1rem; }
   .link-cards { grid-template-columns: 1fr; }
+}
+@media (max-width: 360px) {
+  .group-tile { padding-left: 0.5rem; padding-right: 0.5rem; border-width: 2px; }
+  .group-tile .tile-label { padding: 0.35rem 0.45rem 0.4rem; }
+  .group-tile strong { font-size: 0.92rem; letter-spacing: -0.015em; }
+  .group-tile span { font-size: 0.78rem; }
 }
 
 /* —— v14 colour: whole site on the nav navy (#0a1628) —— */
