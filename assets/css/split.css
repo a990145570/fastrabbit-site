@@ -194,8 +194,9 @@ a, .form-small, .form-disclaimer, .footer-fineprint, .footer-brand p {
 }
 
 
-/* Hero: after dropping the Opening soon stats, drop the tall min-height and tighten bottom padding so the banner hugs the remaining content. Image, fade and copy are unchanged. */
+/* Hero: no stat row. Drop the tall min-height, close the gap under the buttons, and keep the tightened bottom padding so the banner hugs the content. Image, fade and copy are unchanged. */
 .hero { min-height: 0; }
+.hero-actions { margin-bottom: 0; }
 .hero-content { padding-bottom: 2.75rem; }
 @media (max-width: 720px) {
   .hero-content { padding-bottom: 2.25rem; }
