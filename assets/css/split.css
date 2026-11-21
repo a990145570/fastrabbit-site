@@ -201,3 +201,26 @@ a, .form-small, .form-disclaimer, .footer-fineprint, .footer-brand p {
 @media (max-width: 720px) {
   .hero-content { padding-bottom: 2.25rem; }
 }
+
+/* —— Hero rabbits (21 Nov 2026): the logo's own rabbit, at logo size, bounding across the foot of the hero —— */
+.hero-rabbits { position: absolute; inset: auto 0 0 0; height: 110px; overflow: hidden; pointer-events: none; z-index: 0; }
+.hero-rabbit { position: absolute; left: 0; bottom: 14px; width: 64px; transform: translateX(-140px); animation: rabbit-run 15s linear infinite; }
+.hero-rabbit img { display: block; width: 100%; height: auto; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.5)); animation: rabbit-hop 0.62s ease-in-out infinite; transform-origin: 50% 90%; }
+.hero-rabbit-2 { animation-delay: 1.3s; }
+.hero-rabbit-2 img { animation-delay: -0.2s; }
+.hero-rabbit-3 { animation-delay: 3.1s; }
+.hero-rabbit-3 img { animation-delay: -0.4s; }
+@keyframes rabbit-run {
+  0%   { transform: translateX(-140px); }
+  50%  { transform: translateX(calc(100vw + 40px)); }
+  100% { transform: translateX(calc(100vw + 40px)); }
+}
+@keyframes rabbit-hop {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  45%      { transform: translateY(-22px) rotate(-7deg); }
+  70%      { transform: translateY(-8px) rotate(4deg); }
+}
+@media (max-width: 720px) {
+  .hero-rabbit { width: 52px; bottom: 10px; }
+}
+@media (prefers-reduced-motion: reduce) { .hero-rabbits { display: none; } }
