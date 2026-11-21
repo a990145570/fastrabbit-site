@@ -1,10 +1,10 @@
 {
- "updated": "2026-11-20T22:14:58-05:00",
+ "updated": "2026-11-21T12:36:00-05:00",
  "highlights": [
   {
    "month": "2026-11",
    "title": "30th Festival of Lights and Trees",
-   "date": "2026-11-20"
+   "date": "2026-11-21"
   },
   {
    "month": "2026-12",
@@ -13,145 +13,6 @@
   }
  ],
  "events": [
-  {
-   "title": "NLC Fall Program – Arctic Rising",
-   "date": "2026-11-20",
-   "time": "10:00",
-   "place": "Cobourg",
-   "town": "Cobourg",
-   "type": "art event",
-   "blurb": "A Friday-morning art event in Cobourg."
-  },
-  {
-   "title": "Exhibition, ‘The World We Fear’",
-   "date": "2026-11-20",
-   "time": "10:00",
-   "place": "Art Gallery of Northumberland, Cobourg",
-   "town": "Cobourg",
-   "type": "art event",
-   "blurb": "Join neighbours for a Friday-morning art event at Art Gallery of Northumberland, Cobourg.",
-   "also": [
-    "2026-11-21",
-    "2026-11-22"
-   ]
-  },
-  {
-   "title": "Exhibition, ‘At the Threshold: Selections from the Permanent Collection’",
-   "date": "2026-11-20",
-   "time": "10:00",
-   "place": "Art Gallery of Northumberland, Cobourg",
-   "town": "Cobourg",
-   "type": "art event",
-   "blurb": "Join neighbours for a Friday-morning art event at Art Gallery of Northumberland, Cobourg.",
-   "also": [
-    "2026-11-21",
-    "2026-11-22"
-   ]
-  },
-  {
-   "title": "Clark’s Christmas Market",
-   "date": "2026-11-20",
-   "time": "13:00",
-   "place": "Clark Blossoms, Port Hope",
-   "town": "Port Hope",
-   "type": "market",
-   "blurb": "Come along to a Friday-afternoon market at Clark Blossoms, Port Hope.",
-   "also": [
-    "2026-11-21",
-    "2026-11-22"
-   ]
-  },
-  {
-   "title": "Christmas Magic Market",
-   "date": "2026-11-20",
-   "time": "16:00",
-   "place": "Cobourg Rotary Harbourfront Park, Cobourg",
-   "town": "Cobourg",
-   "type": "market",
-   "blurb": "Come along to a Friday-afternoon market at Cobourg Rotary Harbourfront Park, Cobourg."
-  },
-  {
-   "title": "A Downtown Cobourg Christmas and Christmas Magic Light-Up Celebration",
-   "date": "2026-11-20",
-   "time": "16:00",
-   "place": "Downtown Cobourg, Cobourg",
-   "town": "Cobourg",
-   "type": "live music event",
-   "blurb": "Come along to a Friday-afternoon live music event at Downtown Cobourg, Cobourg."
-  },
-  {
-   "title": "30th Festival of Lights and Trees",
-   "date": "2026-11-20",
-   "time": "17:00",
-   "place": "Cameco Capitol Arts Centre, Port Hope",
-   "town": "Port Hope",
-   "type": "festival",
-   "blurb": "Come along to a Friday-evening festival at Cameco Capitol Arts Centre, Port Hope.",
-   "also": [
-    "2026-11-21",
-    "2026-11-22"
-   ],
-   "highlight": true
-  },
-  {
-   "title": "The Festival of Lights and Trees",
-   "date": "2026-11-20",
-   "time": "17:00",
-   "place": "Port Hope",
-   "town": "Port Hope",
-   "type": "festival",
-   "blurb": "Pencil in a Friday-evening festival in Port Hope.",
-   "also": [
-    "2026-11-21",
-    "2026-11-22",
-    "2026-11-24"
-   ]
-  },
-  {
-   "title": "The Great Gingerbread Build-Off Showdown",
-   "date": "2026-11-20",
-   "time": "17:30",
-   "place": "Lions Centre, Cobourg",
-   "town": "Cobourg",
-   "type": "hands-on workshop",
-   "blurb": "Pencil in a Friday-evening hands-on workshop at Lions Centre, Cobourg."
-  },
-  {
-   "title": "Disney’s FROZEN – The Broadway Musical",
-   "date": "2026-11-20",
-   "time": "19:00",
-   "place": "Concert Hall at Victoria Hall, Cobourg",
-   "town": "Cobourg",
-   "type": "stage show",
-   "blurb": "Pencil in a Friday-evening stage show at Concert Hall at Victoria Hall, Cobourg.",
-   "also": [
-    "2026-11-21",
-    "2026-11-22"
-   ]
-  },
-  {
-   "title": "RED A Big Bad Wolf Panto NAUGHTY",
-   "date": "2026-11-20",
-   "time": "19:30",
-   "place": "Cameco Capitol Arts Centre, Port Hope",
-   "town": "Port Hope",
-   "type": "stage show",
-   "blurb": "A Friday-evening stage show at Cameco Capitol Arts Centre, Port Hope.",
-   "also": [
-    "2026-11-21",
-    "2026-11-22",
-    "2026-11-24"
-   ]
-  },
-  {
-   "title": "Christmas Magic",
-   "date": "2026-11-20",
-   "time": "",
-   "place": "Cobourg",
-   "town": "Cobourg",
-   "type": "holiday celebration",
-   "blurb": "Pencil in a Friday holiday celebration in Cobourg."
-  },
   {
    "title": "88th Christmas Fayre, presented by Port Hope United Church",
    "date": "2026-11-21",
@@ -276,6 +137,75 @@
    "blurb": "Come along to a Saturday-morning market at Trinity United Church, Cobourg."
   },
   {
+   "title": "30th Festival of Lights and Trees",
+   "date": "2026-11-21",
+   "time": "11:00",
+   "place": "Cameco Capitol Arts Centre, Port Hope",
+   "town": "Port Hope",
+   "type": "festival",
+   "blurb": "Come along to a Saturday-morning festival at Cameco Capitol Arts Centre, Port Hope.",
+   "also": [
+    "2026-11-22",
+    "2026-11-24",
+    "2026-11-25"
+   ],
+   "highlight": true
+  },
+  {
+   "title": "The Festival of Lights and Trees",
+   "date": "2026-11-21",
+   "time": "11:00",
+   "place": "Port Hope",
+   "town": "Port Hope",
+   "type": "festival",
+   "blurb": "Pencil in a Saturday-morning festival in Port Hope.",
+   "also": [
+    "2026-11-22",
+    "2026-11-24",
+    "2026-11-25"
+   ]
+  },
+  {
+   "title": "Clark’s Christmas Market",
+   "date": "2026-11-21",
+   "time": "12:00",
+   "place": "Clark Blossoms, Port Hope",
+   "town": "Port Hope",
+   "type": "market",
+   "blurb": "Join neighbours for a Saturday-afternoon market at Clark Blossoms, Port Hope.",
+   "also": [
+    "2026-11-22"
+   ]
+  },
+  {
+   "title": "Exhibition, ‘The World We Fear’",
+   "date": "2026-11-21",
+   "time": "12:00",
+   "place": "Art Gallery of Northumberland, Cobourg",
+   "town": "Cobourg",
+   "type": "art event",
+   "blurb": "A Saturday-afternoon art event at Art Gallery of Northumberland, Cobourg.",
+   "also": [
+    "2026-11-22",
+    "2026-11-24",
+    "2026-11-25"
+   ]
+  },
+  {
+   "title": "Exhibition, ‘At the Threshold: Selections from the Permanent Collection’",
+   "date": "2026-11-21",
+   "time": "12:00",
+   "place": "Art Gallery of Northumberland, Cobourg",
+   "town": "Cobourg",
+   "type": "art event",
+   "blurb": "A Saturday-afternoon art event at Art Gallery of Northumberland, Cobourg.",
+   "also": [
+    "2026-11-22",
+    "2026-11-24",
+    "2026-11-25"
+   ]
+  },
+  {
    "title": "Winter Wreath Workshop",
    "date": "2026-11-21",
    "time": "12:00",
@@ -292,6 +222,18 @@
    "town": "Cobourg",
    "type": "hands-on workshop",
    "blurb": "Join neighbours for a Saturday-afternoon hands-on workshop at Presqu’ile Waddling Arts Centre, Cobourg."
+  },
+  {
+   "title": "Disney’s FROZEN – The Broadway Musical",
+   "date": "2026-11-21",
+   "time": "13:30",
+   "place": "Concert Hall at Victoria Hall, Cobourg",
+   "town": "Cobourg",
+   "type": "stage show",
+   "blurb": "A Saturday-afternoon stage show at Concert Hall at Victoria Hall, Cobourg.",
+   "also": [
+    "2026-11-22"
+   ]
   },
   {
    "title": "Honey Fermentation for Gut Health Workshop",
@@ -367,6 +309,20 @@
    "town": "Cobourg",
    "type": "hands-on workshop",
    "blurb": "Come along to a Saturday-evening hands-on workshop in Cobourg."
+  },
+  {
+   "title": "RED A Big Bad Wolf Panto NAUGHTY",
+   "date": "2026-11-21",
+   "time": "19:30",
+   "place": "Cameco Capitol Arts Centre, Port Hope",
+   "town": "Port Hope",
+   "type": "stage show",
+   "blurb": "A Saturday-evening stage show at Cameco Capitol Arts Centre, Port Hope.",
+   "also": [
+    "2026-11-22",
+    "2026-11-24",
+    "2026-11-25"
+   ]
   },
   {
    "title": "Celebrate the Season - New Ventures Band",
@@ -459,6 +415,15 @@
    ]
   },
   {
+   "title": "Full Moon Circle with Lisa Hoskin",
+   "date": "2026-11-23",
+   "time": "19:00",
+   "place": "The Whispering Oak, Cobourg",
+   "town": "Cobourg",
+   "type": "hands-on workshop",
+   "blurb": "A Monday-evening hands-on workshop at The Whispering Oak, Cobourg."
+  },
+  {
    "title": "Let's Colour - All Ages",
    "date": "2026-11-24",
    "time": "15:00",
@@ -475,6 +440,15 @@
    "town": "Port Hope",
    "type": "talk",
    "blurb": "A Tuesday-evening talk in Port Hope."
+  },
+  {
+   "title": "Battle of Britain: Canadian Airmen in Their Finest Hour",
+   "date": "2026-11-24",
+   "time": "19:30",
+   "place": "Victoria Hall, Cobourg",
+   "town": "Cobourg",
+   "type": "art event",
+   "blurb": "Join neighbours for a Tuesday-evening art event at Victoria Hall, Cobourg."
   },
   {
    "title": "Toddlers and Waddlers with EarlyON",
