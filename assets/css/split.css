@@ -184,3 +184,11 @@ a, .form-small, .form-disclaimer, .footer-fineprint, .footer-brand p {
   .site-header .logo img,
   .site-header .logo-banner { height: 32px; max-width: min(188px, 56vw); }
 }
+
+
+/* Home Community intro: same look as the Community page opening, fitted under the hero. */
+.home-community { padding-top: 2.25rem; padding-bottom: 2.25rem; }
+.home-community .community-intro { margin-bottom: 0; }
+@media (max-width: 720px) {
+  .home-community { padding-top: 1.75rem; padding-bottom: 1.75rem; }
+}
