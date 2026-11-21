@@ -192,3 +192,11 @@ a, .form-small, .form-disclaimer, .footer-fineprint, .footer-brand p {
 @media (max-width: 720px) {
   .home-community { padding-top: 1.75rem; padding-bottom: 1.75rem; }
 }
+
+
+/* Hero: after dropping the Opening soon stats, drop the tall min-height and tighten bottom padding so the banner hugs the remaining content. Image, fade and copy are unchanged. */
+.hero { min-height: 0; }
+.hero-content { padding-bottom: 2.75rem; }
+@media (max-width: 720px) {
+  .hero-content { padding-bottom: 2.25rem; }
+}
