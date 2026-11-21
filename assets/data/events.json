@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-20T13:39:00-05:00",
+ "updated": "2026-11-20T22:14:58-05:00",
  "highlights": [
   {
    "month": "2026-11",
@@ -142,6 +142,15 @@
     "2026-11-22",
     "2026-11-24"
    ]
+  },
+  {
+   "title": "Christmas Magic",
+   "date": "2026-11-20",
+   "time": "",
+   "place": "Cobourg",
+   "town": "Cobourg",
+   "type": "holiday celebration",
+   "blurb": "Pencil in a Friday holiday celebration in Cobourg."
   },
   {
    "title": "88th Christmas Fayre, presented by Port Hope United Church",
@@ -547,15 +556,6 @@
    "town": "Cobourg",
    "type": "live music event",
    "blurb": "Come along to a Sunday live music event in Cobourg."
-  },
-  {
-   "title": "Christmas Magic",
-   "date": "2026-11-30",
-   "time": "",
-   "place": "Cobourg",
-   "town": "Cobourg",
-   "type": "holiday celebration",
-   "blurb": "A Monday holiday celebration in Cobourg."
   },
   {
    "title": "Christmas Wassail",
