@@ -172,14 +172,32 @@ def kind_for(e):
     return "community event"
 
 
+def format_place(venue, town):
+    place = tidy_title(venue) if venue else ""
+    if not place or place.lower() == town.lower():
+        return town, f"in {town}"
+    stripped = re.sub(
+        rf"(?:(?:[,:]\s*|\s*[-–—|]\s*){re.escape(town)}(?:,\s*(?:ON|Ontario))?)+$",
+        "",
+        place,
+        flags=re.I,
+    ).strip()
+    if not stripped or stripped.lower() == town.lower():
+        return town, f"in {town}"
+    if re.search(rf"\b{re.escape(town)}(?:,\s*(?:ON|Ontario))?$", stripped, re.I):
+        label = re.sub(r",\s*(?:ON|Ontario)$", "", stripped, flags=re.I)
+        return label, f"at {label}"
+    label = f"{stripped}, {town}"
+    return label, f"at {label}"
+
+
 def rewrite(e):
     title = tidy_title(e["title"])
     kind = kind_for(e)
     day = e["date"].strftime("%A")
     part = DAYPART(e["time"])
     when = f"{day}-{part}" if part else day
-    place = e["venue"] and tidy_title(e["venue"])
-    where = f"at {place}, {e['town']}" if place else f"in {e['town']}"
+    place, where = format_place(e["venue"], e["town"])
     seed = int(hashlib.sha1((title + e["date"].isoformat()).encode()).hexdigest(), 16)
     blurb = OPENERS[seed % len(OPENERS)].format(when=when, kind=kind, where=where)
     blurb = blurb[0].upper() + blurb[1:]
@@ -187,7 +205,7 @@ def rewrite(e):
         "title": title,
         "date": e["date"].isoformat(),
         "time": e["time"] or "",
-        "place": f"{place}, {e['town']}" if place else e["town"],
+        "place": place,
         "town": e["town"],
         "type": kind,
         "blurb": blurb,
