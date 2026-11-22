@@ -210,44 +210,77 @@ a, .form-small, .form-disclaimer, .footer-fineprint, .footer-brand p {
 /* the lighter fade lets more photo through, so the orange words get a slightly wider dark halo */
 .hero h1 span { text-shadow: 0 1px 2px rgba(7, 17, 31, 0.9), 0 2px 16px rgba(7, 17, 31, 0.6), 0 0 28px rgba(7, 17, 31, 0.5); }
 
-/* —— Quiet rabbits (21 Nov 2026): three small logo-style rabbits, grazing, sniffing and sleeping —— */
+/* —— Page rabbits (21 Nov 2026, 7:50 PM): shaded, about 15% bigger, inline SVG so head, ears and tail can move.
+   Each does a slow, varied loop of small gestures in place (no travelling), and none sits on text or imagery:
+   grazer at the foot of the Community intro, sniffer at the top edge of the highlights, sleeper in the footer corner. —— */
 .rabbit-quiet { position: absolute; z-index: 1; display: block; pointer-events: none; line-height: 0; }
-.rabbit-quiet img { display: block; width: 100%; height: auto; filter: drop-shadow(0 1px 2px rgba(0,0,0,0.45)); }
-/* grazer: hero, bottom-left, in the padding under the buttons */
-.rabbit-graze { left: max(10px, calc((100% - min(100% - 2.5rem, var(--max, 1120px))) / 2)); bottom: 6px; width: 48px; }
-.rabbit-graze img { transform-origin: 18% 92%; animation: rabbit-graze 6s ease-in-out infinite; }
-@keyframes rabbit-graze {
-  0%, 62%, 100% { transform: rotate(0deg); }
-  70%           { transform: rotate(4deg); }
-  76%           { transform: rotate(1.5deg); }
-  82%           { transform: rotate(4deg); }
-  90%           { transform: rotate(0deg); }
+.rabbit-quiet svg { display: block; width: 100%; height: auto; overflow: visible; filter: drop-shadow(0 1px 1.5px rgba(0,0,0,0.35)); }
+.rabbit-quiet svg g, .rabbit-quiet svg ellipse { transform-box: view-box; }
+/* grazer: bottom-right of the Community intro, on its own strip of padding (beside the copy on wide screens) */
+.home-community { position: relative; padding-bottom: calc(1.75rem + 54px); }
+.rabbit-graze { right: max(12px, calc((100% - min(100% - 2.5rem, var(--max, 1120px))) / 2)); bottom: 12px; width: 48px; }
+@media (min-width: 1100px) {
+  .home-community { padding-bottom: 2.25rem; }
+  .rabbit-graze { width: 55px; bottom: 2.25rem; }
 }
-/* sniffer: top-right edge of the home highlights section, in its top padding */
+/* sniffer: top-right edge of the home highlights, inside its top padding */
 .home-highlights { position: relative; }
-.rabbit-sniff { right: max(12px, calc((100% - min(100% - 2.5rem, var(--max, 1120px))) / 2)); top: 10px; width: 27px; }
-.rabbit-sniff img { transform-origin: 40% 100%; animation: rabbit-sniff 4.5s ease-in-out infinite; }
-@keyframes rabbit-sniff {
-  0%, 80%, 100% { transform: rotate(0deg) translateY(0); }
-  84%           { transform: rotate(-2deg) translateY(-1px); }
-  88%           { transform: rotate(0.5deg) translateY(0); }
-  92%           { transform: rotate(-2deg) translateY(-1px); }
-}
+.rabbit-sniff { right: max(12px, calc((100% - min(100% - 2.5rem, var(--max, 1120px))) / 2)); top: 8px; width: 31px; }
+@media (max-width: 720px) { .home-highlights { padding-top: 4.75rem; } }
 /* sleeper: bottom-right corner of the footer, under the fine print */
-.site-footer { position: relative; padding-bottom: 3.5rem; }
-.rabbit-sleep { right: max(12px, calc((100% - min(100% - 2.5rem, var(--max, 1120px))) / 2)); bottom: 12px; width: 52px; }
-.rabbit-sleep img { transform-origin: 50% 100%; animation: rabbit-breathe 4.6s ease-in-out infinite; }
-@keyframes rabbit-breathe {
-  0%, 100% { transform: scale(1, 1); }
-  50%      { transform: scale(1.02, 1.045); }
+.site-footer { position: relative; padding-bottom: 4.25rem; }
+.rabbit-sleep { right: max(12px, calc((100% - min(100% - 2.5rem, var(--max, 1120px))) / 2)); bottom: 12px; width: 60px; }
+@media (max-width: 720px) { .rabbit-sleep { width: 53px; } }
+
+/* grazer, 17 s: nibbles (head dips), a long head lift to look round, ear flicks, a tail twitch */
+.rq-graze .rq-head  { animation: rq-graze-head 17s ease-in-out infinite; }
+.rq-graze .rq-ears  { animation: rq-graze-ears 17s ease-in-out infinite; }
+.rq-graze .rq-tail  { animation: rq-graze-tail 17s ease-in-out infinite; }
+@keyframes rq-graze-head {
+  0%, 100% { transform: rotate(0deg); }
+  3% { transform: rotate(2.6deg); } 5% { transform: rotate(0.4deg); } 7% { transform: rotate(2.6deg); } 9% { transform: rotate(0.4deg); } 11% { transform: rotate(2.4deg); } 14% { transform: rotate(0deg); }
+  38% { transform: rotate(0deg); } 43% { transform: rotate(-3.5deg); } 55% { transform: rotate(-3.5deg); } 60% { transform: rotate(0deg); }
+  76% { transform: rotate(0deg); } 78% { transform: rotate(2.6deg); } 80% { transform: rotate(0.4deg); } 82% { transform: rotate(2.6deg); } 85% { transform: rotate(0deg); }
 }
-@media (max-width: 720px) {
-  .rabbit-graze { width: 42px; bottom: 4px; }
-  .rabbit-sleep { width: 46px; }
+@keyframes rq-graze-ears {
+  0%, 26%, 31%, 47%, 51%, 66%, 69%, 100% { transform: rotate(0deg); }
+  27.5% { transform: rotate(-5deg); } 29% { transform: rotate(3deg); }
+  49% { transform: rotate(-4deg); }
+  67.5% { transform: rotate(-5deg); }
 }
+@keyframes rq-graze-tail { 0%, 88%, 93%, 100% { transform: rotate(0deg); } 89.5% { transform: rotate(7deg); } 91% { transform: rotate(-4deg); } }
+
+/* sniffer, 13 s: nose twitches, a head turn up and back, an upright stretch, ear twitches */
+.rq-sniff .rq-head   { animation: rq-sniff-head 13s ease-in-out infinite; }
+.rq-sniff .rq-ears   { animation: rq-sniff-ears 13s ease-in-out infinite; }
+.rq-sniff .rq-body   { animation: rq-sniff-body 13s ease-in-out infinite; }
+.rq-sniff .rq-shadow { animation: rq-sniff-shadow 13s ease-in-out infinite; }
+@keyframes rq-sniff-head {
+  0%, 100% { transform: rotate(0deg); }
+  4% { transform: rotate(-1deg); } 5% { transform: rotate(0.6deg); } 6% { transform: rotate(-1deg); } 7% { transform: rotate(0.6deg); } 8% { transform: rotate(-1deg); } 10% { transform: rotate(0deg); }
+  28% { transform: rotate(0deg); } 33% { transform: rotate(-3.5deg) scaleX(0.97); } 44% { transform: rotate(-3.5deg) scaleX(0.97); } 49% { transform: rotate(2deg); } 54% { transform: rotate(0deg); }
+  80% { transform: rotate(0deg); } 81% { transform: rotate(-1deg); } 82% { transform: rotate(0.6deg); } 83% { transform: rotate(-1deg); } 85% { transform: rotate(0deg); }
+}
+@keyframes rq-sniff-ears { 0%, 18%, 22%, 70%, 74%, 100% { transform: rotate(0deg); } 19.5% { transform: rotate(-5deg); } 71.5% { transform: rotate(4deg); } }
+@keyframes rq-sniff-body { 0%, 58%, 75%, 100% { transform: scale(1, 1); } 63% { transform: scale(0.98, 1.05); } 70% { transform: scale(0.98, 1.05); } }
+@keyframes rq-sniff-shadow { 0%, 58%, 75%, 100% { transform: scaleX(1); opacity: 1; } 63%, 70% { transform: scaleX(0.92); opacity: 0.85; } }
+
+/* sleeper: breathing every 4.6 s; on a 19 s loop an ear twitch, a tail flick and a slow settle of the head */
+.rq-sleep .rq-body  { animation: rq-breathe 4.6s ease-in-out infinite; }
+.rq-sleep .rq-ears  { animation: rq-sleep-ears 19s ease-in-out infinite; }
+.rq-sleep .rq-tail  { animation: rq-sleep-tail 19s ease-in-out infinite; }
+.rq-sleep .rq-head  { animation: rq-sleep-head 19s ease-in-out infinite; }
+@keyframes rq-breathe { 0%, 100% { transform: scale(1, 1); } 50% { transform: scale(1.012, 1.035); } }
+@keyframes rq-sleep-ears { 0%, 24%, 27%, 29%, 31%, 100% { transform: rotate(0deg); } 25.5% { transform: rotate(-5deg); } 30% { transform: rotate(-3deg); } }
+@keyframes rq-sleep-tail { 0%, 44%, 48%, 84%, 87%, 100% { transform: rotate(0deg); } 45.5% { transform: rotate(8deg); } 46.8% { transform: rotate(-3deg); } 85.5% { transform: rotate(6deg); } }
+@keyframes rq-sleep-head { 0%, 58%, 76%, 100% { transform: rotate(0deg); } 63%, 71% { transform: rotate(1.6deg); } }
+
 @media (prefers-reduced-motion: reduce) {
-  .rabbit-quiet img { animation: none; }
+  .rabbit-quiet svg g, .rabbit-quiet svg ellipse { animation: none !important; }
 }
+.rq-graze .rq-head { transform-origin: 532px 336px; } .rq-graze .rq-ears { transform-origin: 582px 291px; } .rq-graze .rq-tail { transform-origin: 67px 416px; } .rq-graze .rq-body, .rq-graze .rq-shadow { transform-origin: 405px 540px; }
+.rq-sniff .rq-head { transform-origin: 268px 370px; } .rq-sniff .rq-ears { transform-origin: 233px 222px; } .rq-sniff .rq-tail { transform-origin: 48px 675px; } .rq-sniff .rq-body, .rq-sniff .rq-shadow { transform-origin: 225px 828px; }
+.rq-sleep .rq-head { transform-origin: 579px 383px; } .rq-sleep .rq-ears { transform-origin: 549px 238px; } .rq-sleep .rq-tail { transform-origin: 84px 423px; } .rq-sleep .rq-body, .rq-sleep .rq-shadow { transform-origin: 416px 545px; }
 
 /* —— Services branch (21 Nov 2026): three orange dots when closed; a dotted branch with a leaf tick per item when open —— */
 .svc-group-cue { display: none; }
@@ -332,3 +365,12 @@ details.branch-in tbody td:first-child::before { animation: branch-leaf 80ms ste
 .card-art-investors img { object-position: 55% 45%; }
 .link-card.has-art:hover .card-art img, .link-card.has-art:focus-visible .card-art img { transform: scale(1.03); }
 @media (prefers-reduced-motion: reduce) { .card-art img { transition: none; } .link-card.has-art:hover .card-art img { transform: none; } }
+
+/* —— Floating drone OFF (A, 21 Nov 2026, 7:50 PM: "disable the floating drone moving image for now, we may come back to it later").
+   The .hero-drone markup and its CSS above are kept; delete this rule to bring it back. —— */
+.hero-drone, .hero-content > .hero-drone { display: none !important; }
+
+/* —— "for all of you" links to Events (21 Nov 2026, 7:50 PM): orange word, clear focus ring —— */
+a.all-link { color: #ff6b1a; font-weight: 600; text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px; }
+a.all-link:hover { color: #ff853f; text-decoration-thickness: 2px; }
+a.all-link:focus-visible { outline: 3px solid #ff6b1a; outline-offset: 3px; border-radius: 3px; text-decoration: none; }
