@@ -30,11 +30,8 @@ img, svg, video, table { max-width: 100%; }
 details.svc-group { border-bottom: 1px solid rgba(255,255,255,0.08); }
 details.svc-group > summary { list-style: none; cursor: pointer; display: block; }
 details.svc-group > summary::-webkit-details-marker { display: none; }
-details.svc-group > summary .container { position: relative; padding-right: 3.5rem; }
-.svc-group-cue { position: absolute; right: 1rem; top: 50%; width: 2.25rem; height: 2.25rem; margin-top: -1.125rem; border-radius: 50%; border: 2px solid currentColor; opacity: 0.85; }
-.svc-group-cue::before, .svc-group-cue::after { content: ""; position: absolute; left: 50%; top: 50%; width: 0.9rem; height: 2px; margin: -1px 0 0 -0.45rem; background: currentColor; }
-.svc-group-cue::after { transform: rotate(90deg); transition: transform .2s; }
-details[open] > summary .svc-group-cue::after { transform: rotate(0deg); }
+details.svc-group > summary .container { position: relative; }
+/* group cue: see "Services branch" at the end of this file (three orange dots, 21 Nov 2026) */
 details.svc-group > summary:focus-visible { outline: 3px solid #ff853f; outline-offset: -3px; }
 details.svc-group > summary.group-band { padding-top: 2rem; padding-bottom: 2rem; }
 .group-tools { display: flex; justify-content: flex-end; margin-bottom: 0.75rem; }
@@ -98,11 +95,12 @@ li.event-row[hidden] { display: none; }
 
 /* —— Lighter hero fade and phone fit (12 Nov 2026, 8:43 PM) —— */
 /* Old fade (v14): 90deg 0.92 / 0.80 / 0.62 / 0.70 and 180deg 0.45 / 0.20 / 0.85.
-   New fade: about 28% less opacity, so the hero animation is easier to see. */
+   12 Nov fade: about 28% less opacity: 90deg 0.66 / 0.58 / 0.45 / 0.50 and 180deg 0.32 / 0.14 / 0.61.
+   21 Nov fade (below): about 25% less again, so the cottage, trees and water read through. */
 .hero-art::after {
   background:
-    linear-gradient(90deg, rgba(10, 22, 40, 0.66) 0%, rgba(10, 22, 40, 0.58) 40%, rgba(10, 22, 40, 0.45) 70%, rgba(10, 22, 40, 0.50) 100%),
-    linear-gradient(180deg, rgba(10, 22, 40, 0.32) 0%, rgba(10, 22, 40, 0.14) 40%, rgba(10, 22, 40, 0.61) 100%);
+    linear-gradient(90deg, rgba(10, 22, 40, 0.50) 0%, rgba(10, 22, 40, 0.44) 40%, rgba(10, 22, 40, 0.34) 70%, rgba(10, 22, 40, 0.38) 100%),
+    linear-gradient(180deg, rgba(10, 22, 40, 0.24) 0%, rgba(10, 22, 40, 0.11) 40%, rgba(10, 22, 40, 0.46) 100%);
 }
 /* Phones: smaller in-flow animation after the lead, before the buttons. Desktop unchanged. */
 @media (min-width: 720px) {
@@ -202,25 +200,124 @@ a, .form-small, .form-disclaimer, .footer-fineprint, .footer-brand p {
   .hero-content { padding-bottom: 2.25rem; }
 }
 
-/* —— Hero rabbits (21 Nov 2026): the logo's own rabbit, at logo size, bounding across the foot of the hero —— */
-.hero-rabbits { position: absolute; inset: auto 0 0 0; height: 110px; overflow: hidden; pointer-events: none; z-index: 0; }
-.hero-rabbit { position: absolute; left: 0; bottom: 14px; width: 64px; transform: translateX(-140px); animation: rabbit-run 15s linear infinite; }
-.hero-rabbit img { display: block; width: 100%; height: auto; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.5)); animation: rabbit-hop 0.62s ease-in-out infinite; transform-origin: 50% 90%; }
-.hero-rabbit-2 { animation-delay: 1.3s; }
-.hero-rabbit-2 img { animation-delay: -0.2s; }
-.hero-rabbit-3 { animation-delay: 3.1s; }
-.hero-rabbit-3 img { animation-delay: -0.4s; }
-@keyframes rabbit-run {
-  0%   { transform: translateX(-140px); }
-  50%  { transform: translateX(calc(100vw + 40px)); }
-  100% { transform: translateX(calc(100vw + 40px)); }
+/* —— Hero (21 Nov 2026): enhanced photo, cottage and window kept in view on phones —— */
+/* Desktop object-position is in styles.css (.hero-art img). Phones (360–390 px wide) need the frame
+   pushed further right so the cottage and its window sit inside the screen, not past the edge, and the
+   photo drawn 30% taller (top-anchored) so the window lands just under the intro text, beside the drone. */
+@media (max-width: 720px) {
+  .hero-art img { height: 130%; object-position: 66% 0%; }
 }
-@keyframes rabbit-hop {
-  0%, 100% { transform: translateY(0) rotate(0deg); }
-  45%      { transform: translateY(-22px) rotate(-7deg); }
-  70%      { transform: translateY(-8px) rotate(4deg); }
+/* the lighter fade lets more photo through, so the orange words get a slightly wider dark halo */
+.hero h1 span { text-shadow: 0 1px 2px rgba(7, 17, 31, 0.9), 0 2px 16px rgba(7, 17, 31, 0.6), 0 0 28px rgba(7, 17, 31, 0.5); }
+
+/* —— Quiet rabbits (21 Nov 2026): three small logo-style rabbits, grazing, sniffing and sleeping —— */
+.rabbit-quiet { position: absolute; z-index: 1; display: block; pointer-events: none; line-height: 0; }
+.rabbit-quiet img { display: block; width: 100%; height: auto; filter: drop-shadow(0 1px 2px rgba(0,0,0,0.45)); }
+/* grazer: hero, bottom-left, in the padding under the buttons */
+.rabbit-graze { left: max(10px, calc((100% - min(100% - 2.5rem, var(--max, 1120px))) / 2)); bottom: 6px; width: 48px; }
+.rabbit-graze img { transform-origin: 18% 92%; animation: rabbit-graze 6s ease-in-out infinite; }
+@keyframes rabbit-graze {
+  0%, 62%, 100% { transform: rotate(0deg); }
+  70%           { transform: rotate(4deg); }
+  76%           { transform: rotate(1.5deg); }
+  82%           { transform: rotate(4deg); }
+  90%           { transform: rotate(0deg); }
+}
+/* sniffer: top-right edge of the home highlights section, in its top padding */
+.home-highlights { position: relative; }
+.rabbit-sniff { right: max(12px, calc((100% - min(100% - 2.5rem, var(--max, 1120px))) / 2)); top: 10px; width: 27px; }
+.rabbit-sniff img { transform-origin: 40% 100%; animation: rabbit-sniff 4.5s ease-in-out infinite; }
+@keyframes rabbit-sniff {
+  0%, 80%, 100% { transform: rotate(0deg) translateY(0); }
+  84%           { transform: rotate(-2deg) translateY(-1px); }
+  88%           { transform: rotate(0.5deg) translateY(0); }
+  92%           { transform: rotate(-2deg) translateY(-1px); }
+}
+/* sleeper: bottom-right corner of the footer, under the fine print */
+.site-footer { position: relative; padding-bottom: 3.5rem; }
+.rabbit-sleep { right: max(12px, calc((100% - min(100% - 2.5rem, var(--max, 1120px))) / 2)); bottom: 12px; width: 52px; }
+.rabbit-sleep img { transform-origin: 50% 100%; animation: rabbit-breathe 4.6s ease-in-out infinite; }
+@keyframes rabbit-breathe {
+  0%, 100% { transform: scale(1, 1); }
+  50%      { transform: scale(1.02, 1.045); }
 }
 @media (max-width: 720px) {
-  .hero-rabbit { width: 52px; bottom: 10px; }
+  .rabbit-graze { width: 42px; bottom: 4px; }
+  .rabbit-sleep { width: 46px; }
 }
-@media (prefers-reduced-motion: reduce) { .hero-rabbits { display: none; } }
+@media (prefers-reduced-motion: reduce) {
+  .rabbit-quiet img { animation: none; }
+}
+
+/* —— Services branch (21 Nov 2026): three orange dots when closed; a dotted branch with a leaf tick per item when open —— */
+.svc-group-cue { display: none; }
+details.svc-group > summary h2::after, details.price-group > summary > span:first-child::after {
+  content: ""; display: inline-block; vertical-align: middle; width: 34px; height: 10px; margin: -0.12em 0 0 0.6rem;
+  background: radial-gradient(circle, #ff6b1a 0 3.2px, transparent 3.8px) 0 50% / 12px 10px repeat-x;
+  transform-origin: 50% 50%; transition: transform .25s ease;
+}
+details.svc-group:not([open]) > summary:hover h2::after,
+details.svc-group:not([open]) > summary:focus-visible h2::after,
+details.price-group:not([open]) > summary:hover > span:first-child::after,
+details.price-group:not([open]) > summary:focus-visible > span:first-child::after { transform: translateX(4px); }
+details.svc-group[open] > summary h2::after,
+details.price-group[open] > summary > span:first-child::after { transform: rotate(90deg); }
+details.price-group > summary { list-style: none; }
+details.price-group > summary::-webkit-details-marker { display: none; }
+
+details.svc-group > summary { position: relative; }
+/* geometry: --gut is the page gutter, --bx the line's left edge just inside it, --pad extra room on narrow screens */
+details.svc-group {
+  --gut: calc((100% - min(100% - 2.5rem, var(--max, 1120px))) / 2);
+  --pad: 0px;
+  --bx: max(6px, calc(var(--gut) - 22px));
+}
+@media (max-width: 1180px) {
+  details.svc-group { --pad: 0.75rem; }
+  details.svc-group > summary .container, details.svc-group > section > .container { padding-left: var(--pad); }
+}
+details.svc-group[open] > summary::after, details.svc-group[open] > section.service-detail::before, details.price-group[open] .pricing-table-wrap::before {
+  content: ""; position: absolute; width: 6px;
+  background: radial-gradient(circle, #ff6b1a 0 2.4px, transparent 2.9px) 50% 0 / 6px 10px repeat-y;
+}
+details.svc-group[open] > summary::before, details.svc-group[open] > section.service-detail::after, details.price-group[open] tbody td:first-child::before {
+  content: ""; position: absolute; height: 6px;
+  background: radial-gradient(circle, #ff6b1a 0 2.4px, transparent 2.9px) 0 50% / 9px 6px repeat-x;
+}
+/* root: a tick to the group heading (groups.js sets --root to the heading's middle), then the stem down */
+details.svc-group[open] > summary::after { left: var(--bx); top: calc(var(--root, 55%) - 3px); bottom: 0; }
+details.svc-group[open] > summary::before { left: calc(var(--bx) + 7px); top: calc(var(--root, 55%) - 3px); width: calc(var(--gut) + var(--pad) - var(--bx) - 10px); }
+/* leaves: the line runs down each service, with a tick to its first label; it stops at the last one */
+details.svc-group[open] > section { position: relative; }
+details.svc-group[open] > section.service-detail::before { left: var(--bx); top: 0; bottom: 0; }
+details.svc-group[open] > section.service-detail:nth-last-of-type(2)::before { bottom: auto; height: calc(3.5rem + 16px); }
+details.svc-group[open] > section.service-detail::after { left: calc(var(--bx) + 7px); top: calc(3.5rem + 13px); width: calc(var(--gut) + var(--pad) - var(--bx) - 10px); }
+@media (max-width: 720px) {
+  details.svc-group[open] > section.service-detail::after { top: calc(4rem + 13px); }
+  details.svc-group[open] > section.service-detail:nth-last-of-type(2)::before { height: calc(4rem + 16px); }
+}
+
+/* prices: the same branch down the left of the open table, a tick to each row */
+details.price-group[open] .pricing-table-wrap { position: relative; padding-left: 1.4rem; }
+details.price-group[open] .pricing-table-wrap::before { left: 0.45rem; top: 0; bottom: 1.6rem; }
+details.price-group[open] tbody td:first-child { position: relative; }
+details.price-group[open] tbody td:first-child::before { left: calc(-0.95rem + 7px); width: calc(2.1rem - 11px); top: 1.2rem; }
+@media (max-width: 560px) {
+  details.price-group[open] tbody td:first-child::before { left: calc(-1.85rem + 7px); width: calc(1.85rem - 11px); top: 0.5rem; }
+}
+
+/* the dots form fast and in order when a group opens (groups.js adds .branch-in and numbers items with --i) */
+details.branch-in > summary::before { animation: branch-leaf 80ms steps(2, end) both; }
+details.branch-in > summary::after { animation: branch-down 110ms steps(4, end) both; animation-delay: 60ms; }
+details.branch-in > section.service-detail::before { animation: branch-down 170ms steps(9, end) both; animation-delay: calc(140ms + var(--i, 0) * 28ms); }
+details.branch-in > section.service-detail::after { animation: branch-leaf 80ms steps(3, end) both; animation-delay: calc(190ms + var(--i, 0) * 28ms); }
+details.branch-in .pricing-table-wrap::before { animation: branch-down 300ms steps(16, end) both; animation-delay: 40ms; }
+details.branch-in tbody td:first-child::before { animation: branch-leaf 80ms steps(3, end) both; animation-delay: calc(80ms + var(--i, 0) * 30ms); }
+@keyframes branch-down { from { clip-path: inset(0 0 100% 0); } to { clip-path: inset(0 0 0 0); } }
+@keyframes branch-leaf { from { clip-path: inset(0 100% 0 0); } to { clip-path: inset(0 0 0 0); } }
+@media (prefers-reduced-motion: reduce) {
+  details.branch-in > summary::before, details.branch-in > summary::after,
+  details.branch-in > section.service-detail::before, details.branch-in > section.service-detail::after,
+  details.branch-in .pricing-table-wrap::before, details.branch-in tbody td:first-child::before { animation: none; }
+  details.svc-group > summary h2::after, details.price-group > summary > span:first-child::after { transition: none; }
+}
