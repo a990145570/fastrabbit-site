@@ -321,3 +321,14 @@ details.branch-in tbody td:first-child::before { animation: branch-leaf 80ms ste
   details.branch-in .pricing-table-wrap::before, details.branch-in tbody td:first-child::before { animation: none; }
   details.svc-group > summary h2::after, details.price-group > summary > span:first-child::after { transition: none; }
 }
+
+/* —— Home link cards with art (21 Nov 2026, 7:18 PM): 16:9 picture across the top of each card —— */
+.link-card.has-art { overflow: hidden; }
+.card-art { display: block; margin: -1.15rem -1.25rem 0.55rem; aspect-ratio: 16 / 9; background: #12233d; overflow: hidden; }
+.card-art img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: 50% 50%; transition: transform .35s ease; }
+.card-art-prices img { object-position: 50% 30%; }
+.card-art-community img { object-position: 40% 55%; }
+.card-art-about img { object-position: 50% 45%; }
+.card-art-investors img { object-position: 55% 45%; }
+.link-card.has-art:hover .card-art img, .link-card.has-art:focus-visible .card-art img { transform: scale(1.03); }
+@media (prefers-reduced-motion: reduce) { .card-art img { transition: none; } .link-card.has-art:hover .card-art img { transform: none; } }

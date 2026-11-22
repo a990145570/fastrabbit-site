@@ -50,3 +50,7 @@
 | A green neon rabbit head that bends into a question mark, glowing on a brick wall | FastRabbit | Original artwork, FastRabbit | — | display copy resized, metadata stripped |
 | Aerial view of Amherst Island, Ontario, overlooking the village of Stella with the ferry dock in view | Shhewitt (Wikimedia Commons) | CC0 1.0 — https://creativecommons.org/publicdomain/zero/1.0/ | https://commons.wikimedia.org/wiki/File:Amherst_Island,_Stella_Village.jpg | cropped to 16:9 |
 | Aerial view of patchwork farmlands and a country road | Masood Aslami | Pexels License — https://www.pexels.com/license/ | https://www.pexels.com/photo/32047280/ | cropped to 16:9, top of frame trimmed |
+| A blueprint-style drawing of a small aircraft fanning guide lines down to the rows of a price list | FastRabbit | Illustration generated for FastRabbit, not FastRabbit photography | — | display copy resized, metadata stripped |
+| A small aircraft resting on a wooden workbench beside an open sketch notebook under a desk lamp | FastRabbit | Illustration generated for FastRabbit, not FastRabbit photography | — | display copy resized, metadata stripped |
+| A small aircraft coming in to land on a softly lit pad at the end of a dock at dusk | FastRabbit | Illustration generated for FastRabbit, not FastRabbit photography | — | display copy resized, metadata stripped |
+| Two small aircraft flying in formation over a calm lake at sunset | FastRabbit | Illustration generated for FastRabbit, not FastRabbit photography | — | display copy resized, metadata stripped |
