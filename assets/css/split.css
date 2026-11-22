@@ -210,27 +210,46 @@ a, .form-small, .form-disclaimer, .footer-fineprint, .footer-brand p {
 /* the lighter fade lets more photo through, so the orange words get a slightly wider dark halo */
 .hero h1 span { text-shadow: 0 1px 2px rgba(7, 17, 31, 0.9), 0 2px 16px rgba(7, 17, 31, 0.6), 0 0 28px rgba(7, 17, 31, 0.5); }
 
-/* —— Page rabbits (21 Nov 2026, 7:50 PM): shaded, about 15% bigger, inline SVG so head, ears and tail can move.
-   Each does a slow, varied loop of small gestures in place (no travelling), and none sits on text or imagery:
-   grazer at the foot of the Community intro, sniffer at the top edge of the highlights, sleeper in the footer corner. —— */
-.rabbit-quiet { position: absolute; z-index: 1; display: block; pointer-events: none; line-height: 0; }
+/* —— Page rabbits (22 Nov 2026): shaded inline SVG, all facing right, each sitting just after the end of a heading on the
+   left, where the eye already is. Sniffer after "Hello, neighbours.", grazer after "Forty-four services, four ways in.",
+   sleeper after "dark." in the night banner (transparent round the body, a faint orange glow, no shadow box).
+   Each still does its slow loop of small gestures in place. —— */
+.rabbit-quiet { display: inline-block; position: relative; pointer-events: none; line-height: 0; }
 .rabbit-quiet svg { display: block; width: 100%; height: auto; overflow: visible; filter: drop-shadow(0 1px 1.5px rgba(0,0,0,0.35)); }
 .rabbit-quiet svg g, .rabbit-quiet svg ellipse { transform-box: view-box; }
-/* grazer: bottom-right of the Community intro, on its own strip of padding (beside the copy on wide screens) */
-.home-community { position: relative; padding-bottom: calc(1.75rem + 54px); }
-.rabbit-graze { right: max(12px, calc((100% - min(100% - 2.5rem, var(--max, 1120px))) / 2)); bottom: 12px; width: 48px; }
-@media (min-width: 1100px) {
-  .home-community { padding-bottom: 2.25rem; }
-  .rabbit-graze { width: 55px; bottom: 2.25rem; }
+.rq-nowrap { white-space: nowrap; }
+.rabbit-inline { margin-left: 0.32em; }
+/* sniffer: tall, so it rises above the heading line instead of pushing the lines apart */
+.rabbit-sniff { width: 31px; vertical-align: -0.12em; margin-top: -34px; }
+/* grazer: low and long, feet on the heading's baseline */
+.rabbit-graze { width: 55px; vertical-align: -0.08em; }
+@media (max-width: 720px) { .rabbit-graze { width: 48px; } .rabbit-sniff { width: 28px; margin-top: -30px; } }
+/* sleeper: on the night banner, glowing faintly; the ground shadow is dropped so nothing dark sits under him */
+.rabbit-sleep { width: 60px; vertical-align: -0.06em; margin-left: 0.28em; }
+.rabbit-sleep svg { filter: drop-shadow(0 0 3px rgba(255, 150, 40, 0.75)) drop-shadow(0 0 12px rgba(251, 126, 2, 0.45)); }
+.rabbit-sleep .rq-shadow { display: none; }
+@media (max-width: 720px) { .rabbit-sleep { width: 50px; } }
+
+/* —— Running rabbit (22 Nov 2026): a six-frame bounding run, crossing the empty band above the events card
+   from the left edge to the right, about 3.6 s, then a rest off-stage before the next run. —— */
+.home-events { position: relative; }
+.rabbit-run-lane { position: absolute; left: 0; right: 0; top: 0; height: 88px; overflow: hidden; pointer-events: none; }
+.rr-track { position: absolute; left: -64px; bottom: 6px; width: calc(100% + 64px); height: 36px; animation: rr-cross 11s linear infinite; }
+.rr-runner { position: absolute; left: 0; bottom: 0; width: 64px; line-height: 0; }
+.rr-runner svg { display: block; width: 100%; height: auto; overflow: visible; filter: drop-shadow(0 1px 1.5px rgba(0,0,0,0.35)); }
+.rr-frame { opacity: 0; animation: rr-frame 0.54s steps(1, end) infinite; }
+.rr-f1 { animation-delay: 0s; } .rr-f2 { animation-delay: -0.45s; } .rr-f3 { animation-delay: -0.36s; }
+.rr-f4 { animation-delay: -0.27s; } .rr-f5 { animation-delay: -0.18s; } .rr-f6 { animation-delay: -0.09s; }
+.rr-sit { animation: none; }
+@keyframes rr-frame { 0% { opacity: 1; } 16.6667% { opacity: 0; } 100% { opacity: 0; } }
+/* 0 to 33% of the cycle is the run (left edge to right edge); the rest is a pause out of sight */
+@keyframes rr-cross { 0% { transform: translateX(0); } 33% { transform: translateX(100%); } 100% { transform: translateX(100%); } }
+@media (max-width: 720px) { .rabbit-run-lane { height: 64px; } .rr-runner { width: 54px; } .rr-track { animation-duration: 7.5s; } }
+@media (prefers-reduced-motion: reduce) {
+  .rr-track { animation: none; transform: translateX(calc(max(20px, (100vw - 1120px) / 2) + 64px)); }
+  .rr-frame { animation: none; opacity: 0; }
+  .rr-sit { opacity: 1; }
 }
-/* sniffer: top-right edge of the home highlights, inside its top padding */
-.home-highlights { position: relative; }
-.rabbit-sniff { right: max(12px, calc((100% - min(100% - 2.5rem, var(--max, 1120px))) / 2)); top: 8px; width: 31px; }
-@media (max-width: 720px) { .home-highlights { padding-top: 4.75rem; } }
-/* sleeper: bottom-right corner of the footer, under the fine print */
-.site-footer { position: relative; padding-bottom: 4.25rem; }
-.rabbit-sleep { right: max(12px, calc((100% - min(100% - 2.5rem, var(--max, 1120px))) / 2)); bottom: 12px; width: 60px; }
-@media (max-width: 720px) { .rabbit-sleep { width: 53px; } }
 
 /* grazer, 17 s: nibbles (head dips), a long head lift to look round, ear flicks, a tail twitch */
 .rq-graze .rq-head  { animation: rq-graze-head 17s ease-in-out infinite; }
