@@ -1331,8 +1331,9 @@ a:focus-visible, button:focus-visible, select:focus-visible, input:focus-visible
   position: absolute;
   inset: 0;
   background-color: var(--navy-900);
-  background-image: url("../img/glow-banner.jpg");
-  background-image: image-set(url("../img/glow-banner.webp") type("image/webp"), url("../img/glow-banner.jpg") type("image/jpeg"));
+  /* 22 Nov 2026: the lifted copy of the same picture (every pixel's colour scaled evenly, so hue and shading keep) */
+  background-image: url("../img/glow-banner-lift.jpg");
+  background-image: image-set(url("../img/glow-banner-lift.webp") type("image/webp"), url("../img/glow-banner-lift.jpg") type("image/jpeg"));
   background-position: right 70%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1343,8 +1344,8 @@ a:focus-visible, button:focus-visible, select:focus-visible, input:focus-visible
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(90deg, rgba(7, 17, 31, 0.82) 0%, rgba(7, 17, 31, 0.58) 38%, rgba(7, 17, 31, 0.18) 68%, rgba(7, 17, 31, 0.10) 100%),
-    linear-gradient(180deg, rgba(7, 17, 31, 0.20) 0%, rgba(7, 17, 31, 0.08) 40%, rgba(7, 17, 31, 0.72) 100%);
+    linear-gradient(90deg, rgba(7, 17, 31, 0.72) 0%, rgba(7, 17, 31, 0.46) 38%, rgba(7, 17, 31, 0.06) 66%, rgba(7, 17, 31, 0) 100%),
+    linear-gradient(180deg, rgba(7, 17, 31, 0.08) 0%, rgba(7, 17, 31, 0) 40%, rgba(7, 17, 31, 0.55) 100%);
 }
 .services-banner-txt { position: relative; z-index: 1; padding-top: 5rem; padding-bottom: 3rem; }
 .services-banner h2 { color: var(--white); font-size: clamp(2rem, 4.2vw, 3.2rem); line-height: 1.05; letter-spacing: -0.02em; max-width: 820px; margin: 0 0 1rem; }
