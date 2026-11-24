@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-24T01:05:30-05:00",
+ "updated": "2026-11-24T15:41:02-05:00",
  "highlights": [
   {
    "month": "2026-11",
@@ -57,20 +57,6 @@
    "highlight": true
   },
   {
-   "title": "The Festival of Lights and Trees",
-   "date": "2026-11-24",
-   "time": "12:00",
-   "place": "Port Hope",
-   "town": "Port Hope",
-   "type": "festival",
-   "blurb": "A Tuesday-afternoon festival in Port Hope.",
-   "also": [
-    "2026-11-25",
-    "2026-11-26",
-    "2026-11-27"
-   ]
-  },
-  {
    "title": "RED A Big Bad Wolf Panto NAUGHTY",
    "date": "2026-11-24",
    "time": "14:00",
@@ -85,24 +71,6 @@
    ]
   },
   {
-   "title": "Let's Colour - All Ages",
-   "date": "2026-11-24",
-   "time": "15:00",
-   "place": "Port Hope",
-   "town": "Port Hope",
-   "type": "family-friendly get-together",
-   "blurb": "Come along to a Tuesday-afternoon family-friendly get-together in Port Hope."
-  },
-  {
-   "title": "Community 101: Changing the Story Around Homelessness Part 2",
-   "date": "2026-11-24",
-   "time": "17:30",
-   "place": "Port Hope",
-   "town": "Port Hope",
-   "type": "talk",
-   "blurb": "A Tuesday-evening talk in Port Hope."
-  },
-  {
    "title": "Battle of Britain: Canadian Airmen in Their Finest Hour",
    "date": "2026-11-24",
    "time": "19:30",
@@ -110,24 +78,6 @@
    "town": "Cobourg",
    "type": "art event",
    "blurb": "Join neighbours for a Tuesday-evening art event at Victoria Hall, Cobourg."
-  },
-  {
-   "title": "Toddlers and Waddlers with EarlyON",
-   "date": "2026-11-25",
-   "time": "10:30",
-   "place": "Port Hope",
-   "town": "Port Hope",
-   "type": "family-friendly get-together",
-   "blurb": "A Wednesday-morning family-friendly get-together in Port Hope."
-  },
-  {
-   "title": "International Day for the Elimination of Violence Against Women",
-   "date": "2026-11-25",
-   "time": "",
-   "place": "Port Hope",
-   "town": "Port Hope",
-   "type": "community event",
-   "blurb": "A Wednesday community event in Port Hope."
   },
   {
    "title": "2nd Chances ReBuild Holiday Decor Workshop",
@@ -164,33 +114,6 @@
    "town": "Cobourg",
    "type": "hands-on workshop",
    "blurb": "Join neighbours for a Thursday-evening hands-on workshop at Rosie Young Design Studio, Cobourg."
-  },
-  {
-   "title": "Deck the Walls Opening Reception",
-   "date": "2026-11-26",
-   "time": "18:00",
-   "place": "Port Hope",
-   "town": "Port Hope",
-   "type": "opening reception",
-   "blurb": "Come along to a Thursday-evening opening reception in Port Hope."
-  },
-  {
-   "title": "Adult Craft Night",
-   "date": "2026-11-26",
-   "time": "18:30",
-   "place": "Port Hope",
-   "town": "Port Hope",
-   "type": "hands-on workshop",
-   "blurb": "Come along to a Thursday-evening hands-on workshop in Port Hope."
-  },
-  {
-   "title": "Teen Trivia/Game Night",
-   "date": "2026-11-26",
-   "time": "18:30",
-   "place": "Port Hope",
-   "town": "Port Hope",
-   "type": "games session",
-   "blurb": "Join neighbours for a Thursday-evening games session in Port Hope."
   },
   {
    "title": "Disney’s FROZEN – The Broadway Musical",
@@ -398,15 +321,6 @@
    "blurb": "A Saturday-evening holiday celebration at Downtown Cobourg, Cobourg."
   },
   {
-   "title": "Sunday Scrabble and Chess Drop-in",
-   "date": "2026-11-29",
-   "time": "11:30",
-   "place": "Port Hope",
-   "town": "Port Hope",
-   "type": "games session",
-   "blurb": "A Sunday-morning games session in Port Hope."
-  },
-  {
    "title": "Les AMIS Concert",
    "date": "2026-11-29",
    "time": "",
@@ -414,24 +328,6 @@
    "town": "Cobourg",
    "type": "live music event",
    "blurb": "Come along to a Sunday live music event in Cobourg."
-  },
-  {
-   "title": "Baby Time at PHPL",
-   "date": "2026-11-30",
-   "time": "11:00",
-   "place": "Port Hope",
-   "town": "Port Hope",
-   "type": "family-friendly get-together",
-   "blurb": "Pencil in a Monday-morning family-friendly get-together in Port Hope."
-  },
-  {
-   "title": "Unfinished Stitchery",
-   "date": "2026-11-30",
-   "time": "14:00",
-   "place": "Port Hope",
-   "town": "Port Hope",
-   "type": "hands-on workshop",
-   "blurb": "Join neighbours for a Monday-afternoon hands-on workshop in Port Hope."
   },
   {
    "title": "Christmas Wassail",
