@@ -1,71 +1,35 @@
 {
- "updated": "2026-11-25T14:06:44-05:00",
+ "updated": "2026-11-26T14:38:53-05:00",
  "highlights": [
   {
    "month": "2026-11",
    "title": "30th Festival of Lights and Trees",
-   "date": "2026-11-25"
-  },
-  {
-   "month": "2026-12",
-   "title": "New Years Eve at the Lions",
-   "date": "2026-12-31"
+   "date": "2026-11-26"
   }
  ],
  "events": [
   {
    "title": "Exhibition, ‘The World We Fear’",
-   "date": "2026-11-25",
+   "date": "2026-11-26",
    "time": "10:00",
    "place": "Art Gallery of Northumberland, Cobourg",
    "town": "Cobourg",
    "type": "art event",
-   "blurb": "Join neighbours for a Wednesday-morning art event at Art Gallery of Northumberland, Cobourg.",
+   "blurb": "A Thursday-morning art event at Art Gallery of Northumberland, Cobourg.",
    "also": [
-    "2026-11-26",
     "2026-11-27",
     "2026-11-28"
    ]
   },
   {
    "title": "Exhibition, ‘At the Threshold: Selections from the Permanent Collection’",
-   "date": "2026-11-25",
+   "date": "2026-11-26",
    "time": "10:00",
    "place": "Art Gallery of Northumberland, Cobourg",
    "town": "Cobourg",
    "type": "art event",
-   "blurb": "Pencil in a Wednesday-morning art event at Art Gallery of Northumberland, Cobourg.",
+   "blurb": "Join neighbours for a Thursday-morning art event at Art Gallery of Northumberland, Cobourg.",
    "also": [
-    "2026-11-26",
-    "2026-11-27",
-    "2026-11-28"
-   ]
-  },
-  {
-   "title": "30th Festival of Lights and Trees",
-   "date": "2026-11-25",
-   "time": "17:00",
-   "place": "Cameco Capitol Arts Centre, Port Hope",
-   "town": "Port Hope",
-   "type": "festival",
-   "blurb": "Join neighbours for a Wednesday-evening festival at Cameco Capitol Arts Centre, Port Hope.",
-   "also": [
-    "2026-11-26",
-    "2026-11-27",
-    "2026-11-28"
-   ],
-   "highlight": true
-  },
-  {
-   "title": "RED A Big Bad Wolf Panto NAUGHTY",
-   "date": "2026-11-25",
-   "time": "19:30",
-   "place": "Cameco Capitol Arts Centre, Port Hope",
-   "town": "Port Hope",
-   "type": "stage show",
-   "blurb": "A Wednesday-evening stage show at Cameco Capitol Arts Centre, Port Hope.",
-   "also": [
-    "2026-11-26",
     "2026-11-27",
     "2026-11-28"
    ]
@@ -87,6 +51,21 @@
    "town": "Cobourg",
    "type": "hands-on workshop",
    "blurb": "Come along to a Thursday-afternoon hands-on workshop at Baltimore Valley Garden Centre, Cobourg."
+  },
+  {
+   "title": "30th Festival of Lights and Trees",
+   "date": "2026-11-26",
+   "time": "17:00",
+   "place": "Cameco Capitol Arts Centre, Port Hope",
+   "town": "Port Hope",
+   "type": "festival",
+   "blurb": "A Thursday-evening festival at Cameco Capitol Arts Centre, Port Hope.",
+   "also": [
+    "2026-11-27",
+    "2026-11-28",
+    "2026-11-29"
+   ],
+   "highlight": true
   },
   {
    "title": "Artful Wellness: Somatic Movement and Expressive Art",
@@ -129,6 +108,19 @@
    "blurb": "Come along to a Thursday-evening art event in Cobourg."
   },
   {
+   "title": "RED A Big Bad Wolf Panto NAUGHTY",
+   "date": "2026-11-26",
+   "time": "19:30",
+   "place": "Cameco Capitol Arts Centre, Port Hope",
+   "town": "Port Hope",
+   "type": "stage show",
+   "blurb": "A Thursday-evening stage show at Cameco Capitol Arts Centre, Port Hope.",
+   "also": [
+    "2026-11-27",
+    "2026-11-28"
+   ]
+  },
+  {
    "title": "NCAM Tour with the Curator",
    "date": "2026-11-27",
    "time": "10:30",
@@ -146,7 +138,8 @@
    "type": "market",
    "blurb": "A Friday-afternoon market at Clark Blossoms, Port Hope.",
    "also": [
-    "2026-11-28"
+    "2026-11-28",
+    "2026-11-29"
    ]
   },
   {
@@ -303,7 +296,10 @@
    "place": "Cameco Capitol Arts Centre, Port Hope",
    "town": "Port Hope",
    "type": "stage show",
-   "blurb": "Join neighbours for a Saturday-afternoon stage show at Cameco Capitol Arts Centre, Port Hope."
+   "blurb": "Join neighbours for a Saturday-afternoon stage show at Cameco Capitol Arts Centre, Port Hope.",
+   "also": [
+    "2026-11-29"
+   ]
   },
   {
    "title": "Northumberland Christian School’s Christmas Bazaar",
@@ -324,113 +320,22 @@
    "blurb": "A Saturday-evening holiday celebration at Downtown Cobourg."
   },
   {
-   "title": "Les AMIS Concert",
+   "title": "Ringing in Christmas Holiday Ladder Display Workshop",
    "date": "2026-11-29",
-   "time": "",
-   "place": "Cobourg",
+   "time": "12:00",
+   "place": "Baltimore Valley Garden Centre, Cobourg",
    "town": "Cobourg",
-   "type": "live music event",
-   "blurb": "Come along to a Sunday live music event in Cobourg."
+   "type": "hands-on workshop",
+   "blurb": "A Sunday-afternoon hands-on workshop at Baltimore Valley Garden Centre, Cobourg."
   },
   {
-   "title": "Christmas Wassail",
-   "date": "2026-12-05",
-   "time": "",
-   "place": "Cobourg",
-   "town": "Cobourg",
-   "type": "holiday celebration",
-   "blurb": "Come along to a Saturday holiday celebration in Cobourg."
-  },
-  {
-   "title": "The Light We Seek - Oriana Singers",
-   "date": "2026-12-05",
-   "time": "",
-   "place": "Cobourg",
-   "town": "Cobourg",
-   "type": "live music event",
-   "blurb": "Pencil in a Saturday live music event in Cobourg."
-  },
-  {
-   "title": "A Very Merry Motown Christmas",
-   "date": "2026-12-05",
-   "time": "",
-   "place": "Cobourg",
-   "town": "Cobourg",
-   "type": "live music event",
-   "blurb": "Come along to a Saturday live music event in Cobourg."
-  },
-  {
-   "title": "Northumberland Orchestra Society- Swing Into The Season",
-   "date": "2026-12-12",
-   "time": "",
-   "place": "Cobourg",
-   "town": "Cobourg",
-   "type": "live music event",
-   "blurb": "Pencil in a Saturday live music event in Cobourg."
-  },
-  {
-   "title": "John McDermott - Family Christmas",
-   "date": "2026-12-16",
-   "time": "",
-   "place": "Cobourg",
-   "town": "Cobourg",
-   "type": "holiday celebration",
-   "blurb": "Pencil in a Wednesday holiday celebration in Cobourg."
-  },
-  {
-   "title": "ABBA Revisited- Christmas Spectacular",
-   "date": "2026-12-18",
-   "time": "",
-   "place": "Cobourg",
-   "town": "Cobourg",
-   "type": "live music event",
-   "blurb": "Come along to a Friday live music event in Cobourg."
-  },
-  {
-   "title": "Songs of Love and Light - La Jeunesse",
-   "date": "2026-12-19",
-   "time": "",
-   "place": "Cobourg",
-   "town": "Cobourg",
-   "type": "live music event",
-   "blurb": "A Saturday live music event in Cobourg."
-  },
-  {
-   "title": "Concert Band - Christmas Concert",
-   "date": "2026-12-20",
-   "time": "",
-   "place": "Cobourg",
-   "town": "Cobourg",
-   "type": "live music event",
-   "blurb": "Come along to a Sunday live music event in Cobourg."
-  },
-  {
-   "title": "Sultans of String - Christmas Caravan",
-   "date": "2026-12-20",
-   "time": "",
-   "place": "Cobourg",
-   "town": "Cobourg",
-   "type": "live music event",
-   "blurb": "Come along to a Sunday live music event in Cobourg."
-  },
-  {
-   "title": "New Years Eve at the Lions",
-   "date": "2026-12-31",
-   "time": "",
-   "place": "Cobourg",
-   "town": "Cobourg",
-   "type": "community event",
-   "blurb": "Join neighbours for a Thursday community event in Cobourg.",
-   "highlight": true
-  },
-  {
-   "title": "New Year's Eve Party at Best Western Plus Cobourg",
-   "date": "2026-12-31",
-   "time": "",
-   "place": "Cobourg",
-   "town": "Cobourg",
-   "type": "community event",
-   "blurb": "Pencil in a Thursday community event in Cobourg."
+   "title": "The Great Gingerbread Build-Off Academy",
+   "date": "2026-11-29",
+   "time": "13:00",
+   "place": "Port Hope High School, Port Hope",
+   "town": "Port Hope",
+   "type": "hands-on workshop",
+   "blurb": "A Sunday-afternoon hands-on workshop at Port Hope High School, Port Hope."
   }
  ]
 }
