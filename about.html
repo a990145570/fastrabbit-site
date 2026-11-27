@@ -62,7 +62,27 @@
           </div>
         </div>
         <aside class="about-visual">
-          <a class="img-link" href="assets/img/full/about-aviator.jpg" target="_blank" rel="noopener" aria-label="Open the full-size image"><img src="assets/img/about-aviator.jpg" alt="A white rabbit in brass aviator goggles and a worn canvas coat, sitting in the grass." width="944" height="806" loading="lazy" style="object-position: 4% center"></a>
+          <a class="img-link" href="assets/img/full/about-aviator-last.jpg" target="_blank" rel="noopener" aria-label="Open the full-size image"><video class="about-anim" muted playsinline preload="auto" poster="assets/img/about-aviator-last.jpg" width="952" height="540" role="img" aria-label="A white rabbit in brass aviator goggles and a worn canvas coat, sitting in the grass." style="object-position: 50% center"><source src="assets/img/about-aviator.mp4" type="video/mp4"><img src="assets/img/about-aviator-last.jpg" alt="A white rabbit in brass aviator goggles and a worn canvas coat, sitting in the grass." width="952" height="540" style="object-position: 50% center"></video></a>
+          <script>
+            /* The aviator plays once when it comes into view, then holds on his last frame. With reduced motion, or if playback is blocked, the last frame shows as a still. */
+            (function () {
+              var v = document.querySelector(".about-anim");
+              if (!v || !v.play) return;
+              var last = "assets/img/about-aviator-last.jpg";
+              if (window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+              v.poster = "assets/img/about-aviator-first.jpg";
+              var started = false;
+              function go() {
+                if (started) return; started = true;
+                var p = v.play();
+                if (p && p.catch) p.catch(function () { v.poster = last; });
+              }
+              if ("IntersectionObserver" in window) {
+                var io = new IntersectionObserver(function (es) { es.forEach(function (e) { if (e.isIntersecting) { io.disconnect(); go(); } }); }, { threshold: 0.4 });
+                io.observe(v);
+              } else { go(); }
+            })();
+          </script>
         </aside>
       </div>
     </section>

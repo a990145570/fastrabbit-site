@@ -620,7 +620,8 @@ a.stock-caption:hover {
   box-shadow: var(--shadow);
 }
 
-.about-visual img {
+.about-visual img,
+.about-visual video {
   position: absolute;
   inset: 0;
   width: 100%;
