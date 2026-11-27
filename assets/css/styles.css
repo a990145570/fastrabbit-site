@@ -1003,6 +1003,8 @@ a.stock-caption:hover {
   .booking-wrap,
   .service-detail-grid,
   .footer-grid { grid-template-columns: 1fr; }
+  /* On phones and other narrow widths, the aviator sits above the About blurb. */
+  .about-visual { order: -1; }
   .gallery-grid {
     grid-template-columns: 1fr 1fr;
     grid-auto-rows: 160px;
