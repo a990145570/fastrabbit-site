@@ -1,127 +1,39 @@
 {
- "updated": "2026-11-26T23:17:14-05:00",
+ "updated": "2026-11-27T14:29:57-05:00",
  "highlights": [
   {
    "month": "2026-11",
    "title": "30th Festival of Lights and Trees",
-   "date": "2026-11-26"
+   "date": "2026-11-27"
   },
   {
    "month": "2026-12",
-   "title": "New Years Eve at the Lions",
-   "date": "2026-12-31"
+   "title": "A Winter Welcome",
+   "date": "2026-12-02"
   }
  ],
  "events": [
   {
    "title": "Exhibition, ‘The World We Fear’",
-   "date": "2026-11-26",
+   "date": "2026-11-27",
    "time": "10:00",
    "place": "Art Gallery of Northumberland, Cobourg",
    "town": "Cobourg",
    "type": "art event",
-   "blurb": "A Thursday-morning art event at Art Gallery of Northumberland, Cobourg.",
+   "blurb": "Come along to a Friday-morning art event at Art Gallery of Northumberland, Cobourg.",
    "also": [
-    "2026-11-27",
     "2026-11-28"
    ]
   },
   {
    "title": "Exhibition, ‘At the Threshold: Selections from the Permanent Collection’",
-   "date": "2026-11-26",
+   "date": "2026-11-27",
    "time": "10:00",
    "place": "Art Gallery of Northumberland, Cobourg",
    "town": "Cobourg",
    "type": "art event",
-   "blurb": "Join neighbours for a Thursday-morning art event at Art Gallery of Northumberland, Cobourg.",
+   "blurb": "Come along to a Friday-morning art event at Art Gallery of Northumberland, Cobourg.",
    "also": [
-    "2026-11-27",
-    "2026-11-28"
-   ]
-  },
-  {
-   "title": "2nd Chances ReBuild Holiday Decor Workshop",
-   "date": "2026-11-26",
-   "time": "10:00",
-   "place": "Baltimore Valley Garden Centre, Cobourg",
-   "town": "Cobourg",
-   "type": "hands-on workshop",
-   "blurb": "A Thursday-morning hands-on workshop at Baltimore Valley Garden Centre, Cobourg."
-  },
-  {
-   "title": "A Winter Welcome",
-   "date": "2026-11-26",
-   "time": "13:00",
-   "place": "Baltimore Valley Garden Centre, Cobourg",
-   "town": "Cobourg",
-   "type": "hands-on workshop",
-   "blurb": "Come along to a Thursday-afternoon hands-on workshop at Baltimore Valley Garden Centre, Cobourg."
-  },
-  {
-   "title": "30th Festival of Lights and Trees",
-   "date": "2026-11-26",
-   "time": "17:00",
-   "place": "Cameco Capitol Arts Centre, Port Hope",
-   "town": "Port Hope",
-   "type": "festival",
-   "blurb": "A Thursday-evening festival at Cameco Capitol Arts Centre, Port Hope.",
-   "also": [
-    "2026-11-27",
-    "2026-11-28",
-    "2026-11-29"
-   ],
-   "highlight": true
-  },
-  {
-   "title": "Artful Wellness: Somatic Movement and Expressive Art",
-   "date": "2026-11-26",
-   "time": "17:30",
-   "place": "Art Gallery of Northumberland, Cobourg",
-   "town": "Cobourg",
-   "type": "hands-on workshop",
-   "blurb": "Join neighbours for a Thursday-evening hands-on workshop at Art Gallery of Northumberland, Cobourg."
-  },
-  {
-   "title": "Letting Go Workbook",
-   "date": "2026-11-26",
-   "time": "18:00",
-   "place": "Rosie Young Design Studio, Cobourg",
-   "town": "Cobourg",
-   "type": "hands-on workshop",
-   "blurb": "Join neighbours for a Thursday-evening hands-on workshop at Rosie Young Design Studio, Cobourg."
-  },
-  {
-   "title": "Disney’s FROZEN – The Broadway Musical",
-   "date": "2026-11-26",
-   "time": "19:00",
-   "place": "Concert Hall at Victoria Hall, Cobourg",
-   "town": "Cobourg",
-   "type": "stage show",
-   "blurb": "A Thursday-evening stage show at Concert Hall at Victoria Hall, Cobourg.",
-   "also": [
-    "2026-11-27",
-    "2026-11-28"
-   ]
-  },
-  {
-   "title": "NLC Fall Program – Arctic Rising",
-   "date": "2026-11-26",
-   "time": "19:30",
-   "place": "Cobourg",
-   "town": "Cobourg",
-   "type": "art event",
-   "blurb": "Come along to a Thursday-evening art event in Cobourg."
-  },
-  {
-   "title": "RED A Big Bad Wolf Panto NAUGHTY",
-   "date": "2026-11-26",
-   "time": "19:30",
-   "place": "Cameco Capitol Arts Centre, Port Hope",
-   "town": "Port Hope",
-   "type": "stage show",
-   "blurb": "A Thursday-evening stage show at Cameco Capitol Arts Centre, Port Hope.",
-   "also": [
-    "2026-11-27",
     "2026-11-28"
    ]
   },
@@ -182,6 +94,47 @@
    "town": "Port Hope",
    "type": "festival",
    "blurb": "A Friday-evening festival in Port Hope."
+  },
+  {
+   "title": "30th Festival of Lights and Trees",
+   "date": "2026-11-27",
+   "time": "17:00",
+   "place": "Cameco Capitol Arts Centre, Port Hope",
+   "town": "Port Hope",
+   "type": "festival",
+   "blurb": "Join neighbours for a Friday-evening festival at Cameco Capitol Arts Centre, Port Hope.",
+   "also": [
+    "2026-11-28",
+    "2026-11-29",
+    "2026-12-01"
+   ],
+   "highlight": true
+  },
+  {
+   "title": "Disney’s FROZEN – The Broadway Musical",
+   "date": "2026-11-27",
+   "time": "19:00",
+   "place": "Concert Hall at Victoria Hall, Cobourg",
+   "town": "Cobourg",
+   "type": "stage show",
+   "blurb": "Pencil in a Friday-evening stage show at Concert Hall at Victoria Hall, Cobourg.",
+   "also": [
+    "2026-11-28"
+   ]
+  },
+  {
+   "title": "RED A Big Bad Wolf Panto NAUGHTY",
+   "date": "2026-11-27",
+   "time": "20:00",
+   "place": "Cameco Capitol Arts Centre, Port Hope",
+   "town": "Port Hope",
+   "type": "stage show",
+   "blurb": "A Friday-evening stage show at Cameco Capitol Arts Centre, Port Hope.",
+   "also": [
+    "2026-11-28",
+    "2026-11-29",
+    "2026-12-01"
+   ]
   },
   {
    "title": "Cobourg Farmers Winter Market",
@@ -343,113 +296,50 @@
    "blurb": "A Sunday-afternoon hands-on workshop at Port Hope High School, Port Hope."
   },
   {
-   "title": "Les AMIS Concert",
+   "title": "2nd Chances ReBuild Holiday Decor Workshop",
    "date": "2026-11-29",
-   "time": "",
-   "place": "Cobourg",
+   "time": "14:30",
+   "place": "Baltimore Valley Garden Centre, Cobourg",
+   "town": "Cobourg",
+   "type": "hands-on workshop",
+   "blurb": "Pencil in a Sunday-afternoon hands-on workshop at Baltimore Valley Garden Centre, Cobourg."
+  },
+  {
+   "title": "Les AMIS Concert: pianist Ellen Annor-Adjei, soprano Daniela Pyne, and violinist Evan Pyne",
+   "date": "2026-11-29",
+   "time": "15:00",
+   "place": "Trinity United Church, Cobourg",
    "town": "Cobourg",
    "type": "live music event",
-   "blurb": "Come along to a Sunday live music event in Cobourg."
+   "blurb": "Pencil in a Sunday-afternoon live music event at Trinity United Church, Cobourg."
   },
   {
-   "title": "Christmas Wassail",
-   "date": "2026-12-05",
-   "time": "",
-   "place": "Cobourg",
-   "town": "Cobourg",
-   "type": "holiday celebration",
-   "blurb": "Come along to a Saturday holiday celebration in Cobourg."
-  },
-  {
-   "title": "The Light We Seek - Oriana Singers",
-   "date": "2026-12-05",
-   "time": "",
-   "place": "Cobourg",
+   "title": "Cobourg Comedy Night",
+   "date": "2026-11-29",
+   "time": "18:00",
+   "place": "Lions Centre, Cobourg",
    "town": "Cobourg",
    "type": "live music event",
-   "blurb": "Pencil in a Saturday live music event in Cobourg."
+   "blurb": "A Sunday-evening live music event at Lions Centre, Cobourg."
   },
   {
-   "title": "A Very Merry Motown Christmas",
-   "date": "2026-12-05",
-   "time": "",
-   "place": "Cobourg",
+   "title": "Mosaic Crochet Wine Bottle Holder Workshop",
+   "date": "2026-12-01",
+   "time": "16:00",
+   "place": "Yarn It, Cobourg",
    "town": "Cobourg",
-   "type": "live music event",
-   "blurb": "Come along to a Saturday live music event in Cobourg."
+   "type": "hands-on workshop",
+   "blurb": "Join neighbours for a Tuesday-afternoon hands-on workshop at Yarn It, Cobourg."
   },
   {
-   "title": "Northumberland Orchestra Society- Swing Into The Season",
-   "date": "2026-12-12",
-   "time": "",
-   "place": "Cobourg",
+   "title": "A Winter Welcome",
+   "date": "2026-12-02",
+   "time": "10:00",
+   "place": "Baltimore Valley Garden Centre, Cobourg",
    "town": "Cobourg",
-   "type": "live music event",
-   "blurb": "Pencil in a Saturday live music event in Cobourg."
-  },
-  {
-   "title": "John McDermott - Family Christmas",
-   "date": "2026-12-16",
-   "time": "",
-   "place": "Cobourg",
-   "town": "Cobourg",
-   "type": "holiday celebration",
-   "blurb": "Pencil in a Wednesday holiday celebration in Cobourg."
-  },
-  {
-   "title": "ABBA Revisited- Christmas Spectacular",
-   "date": "2026-12-18",
-   "time": "",
-   "place": "Cobourg",
-   "town": "Cobourg",
-   "type": "live music event",
-   "blurb": "Come along to a Friday live music event in Cobourg."
-  },
-  {
-   "title": "Songs of Love and Light - La Jeunesse",
-   "date": "2026-12-19",
-   "time": "",
-   "place": "Cobourg",
-   "town": "Cobourg",
-   "type": "live music event",
-   "blurb": "A Saturday live music event in Cobourg."
-  },
-  {
-   "title": "Concert Band - Christmas Concert",
-   "date": "2026-12-20",
-   "time": "",
-   "place": "Cobourg",
-   "town": "Cobourg",
-   "type": "live music event",
-   "blurb": "Come along to a Sunday live music event in Cobourg."
-  },
-  {
-   "title": "Sultans of String - Christmas Caravan",
-   "date": "2026-12-20",
-   "time": "",
-   "place": "Cobourg",
-   "town": "Cobourg",
-   "type": "live music event",
-   "blurb": "Come along to a Sunday live music event in Cobourg."
-  },
-  {
-   "title": "New Years Eve at the Lions",
-   "date": "2026-12-31",
-   "time": "",
-   "place": "Cobourg",
-   "town": "Cobourg",
-   "type": "community event",
-   "blurb": "Join neighbours for a Thursday community event in Cobourg.",
+   "type": "hands-on workshop",
+   "blurb": "Join neighbours for a Wednesday-morning hands-on workshop at Baltimore Valley Garden Centre, Cobourg.",
    "highlight": true
-  },
-  {
-   "title": "New Year's Eve Party at Best Western Plus Cobourg",
-   "date": "2026-12-31",
-   "time": "",
-   "place": "Cobourg",
-   "town": "Cobourg",
-   "type": "community event",
-   "blurb": "Pencil in a Thursday community event in Cobourg."
   }
  ]
 }
