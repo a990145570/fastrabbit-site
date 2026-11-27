@@ -212,7 +212,8 @@ a, .form-small, .form-disclaimer, .footer-fineprint, .footer-brand p {
 
 /* —— Page rabbits (22 Nov 2026): shaded inline SVG, all facing right, each sitting just after the end of a heading on the
    left, where the eye already is. Sniffer after "Hello, neighbours.", grazer after "Forty-four services, four ways in.",
-   sleeper after "dark." in the night banner (transparent round the body, a faint orange glow, no shadow box).
+   sleeper a few characters after "dark." in the night banner (transparent round the body, a faint green glow
+   matched to the bulb filament, #91E861, no shadow box; 26 Nov 2026).
    Each still does its slow loop of small gestures in place. —— */
 .rabbit-quiet { display: inline-block; position: relative; pointer-events: none; line-height: 0; }
 .rabbit-quiet svg { display: block; width: 100%; height: auto; overflow: visible; filter: drop-shadow(0 1px 1.5px rgba(0,0,0,0.35)); }
@@ -225,8 +226,9 @@ a, .form-small, .form-disclaimer, .footer-fineprint, .footer-brand p {
 .rabbit-graze { width: 55px; vertical-align: -0.08em; }
 @media (max-width: 720px) { .rabbit-graze { width: 48px; } .rabbit-sniff { width: 28px; margin-top: -30px; } }
 /* sleeper: on the night banner, glowing faintly; the ground shadow is dropped so nothing dark sits under him */
-.rabbit-sleep { width: 60px; vertical-align: -0.06em; margin-left: 0.28em; }
-.rabbit-sleep svg { filter: drop-shadow(0 0 3px rgba(255, 150, 40, 0.75)) drop-shadow(0 0 12px rgba(251, 126, 2, 0.45)); }
+.rabbit-sleep { width: 60px; vertical-align: -0.06em; margin-left: 1.4em; }
+/* 26 Nov 2026: glow a touch softer (alpha down slightly) and about 15% less spread, in the filament green */
+.rabbit-sleep svg { filter: drop-shadow(0 0 2.5px rgba(205, 255, 175, 0.68)) drop-shadow(0 0 10px rgba(145, 232, 97, 0.40)); }
 .rabbit-sleep .rq-shadow { display: none; }
 @media (max-width: 720px) { .rabbit-sleep { width: 50px; } }
 

@@ -1331,9 +1331,9 @@ a:focus-visible, button:focus-visible, select:focus-visible, input:focus-visible
   position: absolute;
   inset: 0;
   background-color: var(--navy-900);
-  /* 22 Nov 2026: the lifted copy of the same picture (every pixel's colour scaled evenly, so hue and shading keep) */
-  background-image: url("../img/glow-banner-lift.jpg");
-  background-image: image-set(url("../img/glow-banner-lift.webp") type("image/webp"), url("../img/glow-banner-lift.jpg") type("image/jpeg"));
+  /* 26 Nov 2026: the lifted copy, darkened about 4% (every pixel scaled evenly), with the individual stars brightened a little */
+  background-image: url("../img/glow-banner-night.jpg");
+  background-image: image-set(url("../img/glow-banner-night.webp") type("image/webp"), url("../img/glow-banner-night.jpg") type("image/jpeg"));
   background-position: right 70%;
   background-size: cover;
   background-repeat: no-repeat;
