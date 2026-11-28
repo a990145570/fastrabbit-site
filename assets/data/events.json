@@ -1,15 +1,10 @@
 {
- "updated": "2026-11-27T14:29:57-05:00",
+ "updated": "2026-11-27T22:55:26-05:00",
  "highlights": [
   {
    "month": "2026-11",
    "title": "30th Festival of Lights and Trees",
    "date": "2026-11-27"
-  },
-  {
-   "month": "2026-12",
-   "title": "A Winter Welcome",
-   "date": "2026-12-02"
   }
  ],
  "events": [
@@ -35,6 +30,18 @@
    "blurb": "Come along to a Friday-morning art event at Art Gallery of Northumberland, Cobourg.",
    "also": [
     "2026-11-28"
+   ]
+  },
+  {
+   "title": "Phantoms of Foodcourt, Exhibition at Ganaraska Art and Framing",
+   "date": "2026-11-27",
+   "time": "10:00",
+   "place": "Ganaraska Art, Port Hope",
+   "town": "Port Hope",
+   "type": "art event",
+   "blurb": "Pencil in a Friday-morning art event at Ganaraska Art, Port Hope.",
+   "also": [
+    "2026-12-01"
    ]
   },
   {
@@ -323,23 +330,13 @@
    "blurb": "A Sunday-evening live music event at Lions Centre, Cobourg."
   },
   {
-   "title": "Mosaic Crochet Wine Bottle Holder Workshop",
-   "date": "2026-12-01",
-   "time": "16:00",
-   "place": "Yarn It, Cobourg",
-   "town": "Cobourg",
+   "title": "Needle Felting Tree Ornaments",
+   "date": "2026-11-30",
+   "time": "18:00",
+   "place": "Journey Through the Arts – The Cabin, Port Hope",
+   "town": "Port Hope",
    "type": "hands-on workshop",
-   "blurb": "Join neighbours for a Tuesday-afternoon hands-on workshop at Yarn It, Cobourg."
-  },
-  {
-   "title": "A Winter Welcome",
-   "date": "2026-12-02",
-   "time": "10:00",
-   "place": "Baltimore Valley Garden Centre, Cobourg",
-   "town": "Cobourg",
-   "type": "hands-on workshop",
-   "blurb": "Join neighbours for a Wednesday-morning hands-on workshop at Baltimore Valley Garden Centre, Cobourg.",
-   "highlight": true
+   "blurb": "A Monday-evening hands-on workshop at Journey Through the Arts – The Cabin, Port Hope."
   }
  ]
 }
